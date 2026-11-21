@@ -1,0 +1,362 @@
+{
+ "meta": {
+  "title": "Primary-source verification delta: Saskatchewan, Manitoba, Quebec (Canada PNP 2026 Arabic guide)",
+  "checked_date": "2026-11-22",
+  "scope": "Close secondary-only gaps flagged in provenance_audit for sk/mb/qc. Field-level verification of load-bearing claims (eligibility/language/experience/offer/outside_canada/funds/fees/status) at owning official sources only.",
+  "method": "Direct fetch/read of saskatchewan.ca, immigratemanitoba.com, quebec.ca pages and one government fee PDF; no reliance on secondary sites.",
+  "convention": "verdict: confirmed = official source matches guide field as written; filled = guide said not-found/see-official and official value now supplied; corrected = official source contradicts or supersedes guide value; stale = was true, now superseded by newer official info; unverified = not found at official source (government may publish elsewhere; not asserted)."
+ },
+ "jurisdictions": [
+  {
+   "id": "sk",
+   "checked_date": "2026-11-22",
+   "fields": [
+    {
+     "stream": "ALL (program level)",
+     "field": "eoi_availability",
+     "claim": "لا سحوبات EOI مجدولة حالياً لمساري Occupation In-Demand وSaskatchewan Express Entry",
+     "verdict": "confirmed",
+     "evidence": "صفحة SINP EOI System الرسمية تنص حرفياً: There are no scheduled EOI draws at this time. الدعوات عبر EOI draws والدعوة صالحة 60 يوماً.",
+     "source_url": "https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/international-skilled-worker-eoi-system"
+    },
+    {
+     "stream": "ALL",
+     "field": "fees",
+     "claim": "رسوم SINP 500$ غير مستردة + مراجعة ثانية 250$",
+     "verdict": "confirmed",
+     "evidence": "صفحات المسارات تنص على رسوم 500$ غير مستردة (Visa/Mastercard). ملحق رسوم حكومة ساسكاتشوان 2026-27: رسوم 500$ جديدة على طلبات العمالة بعرض عمل اعتباراً من 1 أبريل 2026 (كانت مجانية)، ورسوم مراجعة ثانية 250$ من 1 أبريل 2026 تُعاد كاملة إذا قُبلت المراجعة؛ طلب المراجعة خلال 30 يوماً من خطاب عدم الأهلية عبر زر Request for Second Review.",
+     "source_url": "https://www.saskatchewan.ca/-/media/news-release-backgrounders/2026/mar/backgrounder---summary-of-2026-27-fees-and-charges.pdf",
+     "source_url_2": "https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/procedures-and-guidelines"
+    },
+    {
+     "stream": "International Skilled Worker: Employment Offer",
+     "field": "eligibility_grid",
+     "claim": "(الدليل لا يذكر شبكة النقاط لهذا المسار)",
+     "verdict": "corrected",
+     "corrected_value": "يلزم 60 نقطة على الأقل في شبكة تقييم SINP (العوامل الخمسة) إضافة إلى الشروط المذكورة في الدليل",
+     "evidence": "صفحة المسار الرسمية: Score at least 60 points on the SINP point assessment grid.",
+     "source_url": "https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/international-skilled-worker-with-employment-offer"
+    },
+    {
+     "stream": "International Skilled Worker: Employment Offer",
+     "field": "eligibility_core",
+     "claim": "معايير الأهلية (لغة/خبرة/تعليم/أموال/خارج كندا) كما في الدليل",
+     "verdict": "confirmed",
+     "evidence": "مؤكد: خارج كندا أو بوضع قانوني داخلها؛ سنة خبرة في المهنة خلال آخر 10 سنوات؛ CLB 4 (قد يطلب أعلى في المنظمة)؛ عرض دائم بدوام كامل TEER 0-3 مع EPA (تأكيد عبر OASIS خلال 10 أيام)؛ سائقو الشاحنات عبر Existing Work Permit وصحة NOC 3 عبر Health Talent/Students.",
+     "source_url": "https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers"
+    },
+    {
+     "stream": "International Skilled Worker: Occupation In-Demand",
+     "field": "eligibility_core",
+     "claim": "معايير الأهلية (لغة/خبرة/تعليم/أموال/خارج كندا) كما في الدليل",
+     "verdict": "confirmed",
+     "evidence": "مؤكد: 60/110 نقطة؛ CLB 4؛ سنة بدوام كامل (30 ساعة أسبوعياً) خلال آخر 10 سنوات في TEER 0-3 مطلوبة وغير مستبعدة ومرتبطة بالتعليم؛ تعليم ما بعد ثانوي + ECA؛ أموال استقرار وخطة استقرار؛ ممكن من خارج كندا؛ التقديم عبر EOI فقط.",
+     "source_url": "https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers"
+    },
+    {
+     "stream": "International Skilled Worker: Saskatchewan Express Entry",
+     "field": "eligibility_core",
+     "claim": "معايير الأهلية (لغة/خبرة/تعليم/أموال/خارج كندا) كما في الدليل",
+     "verdict": "confirmed",
+     "evidence": "مؤكد: ملف Express Entry صالح (Profile Number وJob Seeker Code)؛ 60 نقطة؛ لغة بالمستوى الفيدرالي؛ ما بعد ثانوي سنة على الأقل + ECA؛ خبرة: سنة/10 سنوات للمهنيين، سنتان/5 سنوات للحرفيين، سنة/3 سنوات لـCEC؛ أموال وخطة استقرار؛ ممكن من خارج كندا.",
+     "source_url": "https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers"
+    },
+    {
+     "stream": "Saskatchewan Experience: Existing Work Permit",
+     "field": "eligibility_core",
+     "claim": "6 أشهر (780 ساعة) متتالية لدى صاحب العمل الداعم؛ CLB 4 لـTEER 4-5؛ حاملو LMIA/CUAET/التنقل الفرنكوفوني في أي TEER؛ غيرهم TEER 0-3 أو حرفة مخصصة؛ EPA",
+     "verdict": "confirmed",
+     "evidence": "مؤكد نصاً في صفحة المسار. إضافة مفيدة: حاملو تصريح العمل المفتوح للزوجين وتصاريح الدراسة غير مؤهلين لهذا المسار؛ سائقو الشاحنات NOC 73300 ومقدمو الطعام NOC 65200 يحتاجون تصريح LMIA/CUAET/تنقل فرنكوفوني.",
+     "source_url": "https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-with-saskatchewan-experience/applicants-with-existing-work-permit"
+    },
+    {
+     "stream": "Saskatchewan Experience: Students",
+     "field": "eligibility_core",
+     "claim": "تخرج من DLI في ساسكاتشوان + PGWP/تصريح دراسة/CUAET؛ 6 أشهر (780 ساعة) عمل مدفوع مرتبط بالدراسة؛ عرض دائم بدوام كامل في مجال الدراسة TEER 0-3 أو حرفة مخصصة؛ حاملو تصريح الدراسة يحتاجون عرضاً في قطاع أولوية؛ CLB 4 لـTEER 4-5",
+     "verdict": "confirmed",
+     "evidence": "مؤكد نصاً في صفحة المسار الرسمية (شروط العمل المؤهِّل تشمل on-campus وoff-campus وco-op وزمالات الدراسات العليا والعمل على PGWP).",
+     "source_url": "https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-with-saskatchewan-experience/students"
+    },
+    {
+     "stream": "Health Talent Pathway",
+     "field": "eligibility_core",
+     "claim": "CLB 5 (CLB 7 لخيار Express Entry)؛ 6 أشهر لدى صاحب العمل الداعم أو سنة في آخر 5 سنوات؛ عرض صحي مع EPA؛ ممكن من خارج كندا",
+     "verdict": "confirmed",
+     "evidence": "مؤكد في صفحة المسار: غير Express Entry يتطلب CLB 5 وخبرة 6 أشهر (780 ساعة) مع صاحب العمل الداعم أو سنة في آخر 5 سنوات؛ خيار Express Entry يتطلب CLB 7 وسنة خبرة ماهرة في آخر 5 سنوات (داخل أو خارج كندا)؛ قائمة مهن صحية محددة بأكواد NOC؛ تعليم ما بعد ثانوي مرتبط (+ECA للأجنبي).",
+     "source_url": "https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/health-talent-pathway"
+    },
+    {
+     "stream": "Agriculture Talent Pathway",
+     "field": "eligibility_core",
+     "claim": "CLB 4؛ ثانوية على الأقل؛ سنة في آخر 3 سنوات أو 6 أشهر (780 ساعة) لدى صاحب العمل؛ عرض زراعي مدرج مع EPA؛ ممكن من خارج كندا",
+     "verdict": "confirmed",
+     "evidence": "مؤكد في صفحة المسار مع قائمة مهن NOC محددة (84120, 85100, 85101, 85103 وغيرها) وبعضها مشروط بقطاع NAICS لصاحب العمل.",
+     "source_url": "https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/agriculture-talent-pathway"
+    },
+    {
+     "stream": "Innovation and Tech Talent Pathway",
+     "field": "language",
+     "claim": "حسب المهنة؛ راجع صفحة المسار (لم يُعثر عليه)",
+     "verdict": "filled",
+     "corrected_value": "غير Express Entry: من يعمل حالياً لدى صاحب العمل العارض يستوفي متطلب اللغة التي يحددها صاحب العمل في العرض؛ من لا يعمل لديه يحتاج CLB 5 أو أعلى (إنجليزية أو فرنسية)",
+     "evidence": "صفحة المسار الرسمية (قسم Eligibility Non-Express Entry). الخبرة مؤكدة: سنة في آخر 5 سنوات أو 6 أشهر (780 ساعة) لدى صاحب العمل؛ تعليم ما بعد ثانوي مرتبط؛ ترخيص APEGS/SIA لبعض المهن.",
+     "source_url": "https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/sinp-innovation-tech-talent-pathway"
+    },
+    {
+     "stream": "ALL",
+     "field": "operational_notice",
+     "claim": "(غير موجود في الدليل)",
+     "verdict": "filled",
+     "corrected_value": "بوابة OASIS ستتوقف من 5 مساء 4 ديسمبر 2026 حتى 8 صباح 7 ديسمبر 2026 للترقية؛ الحسابات والطلبات القائمة لا تتأثر",
+     "evidence": "تنبيه منشور أعلى صفحات مسارات SINP.",
+     "source_url": "https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/international-skilled-worker-with-employment-offer"
+    }
+   ],
+   "unverified": [
+    "هل تسري رسوم 500$ على مساري Existing Work Permit وStudents تحديداً: صفحتا المسارين لا تذكران رسوماً، بينما ملحق الرسوم الحكومي يفرض 500$ على طلبات العمالة بعرض عمل من 1 أبريل 2026 (والمرجح شمولهما، لكن لا نص مباشر في صفحة المسار).",
+    "معايير خيار Express Entry ضمن Innovation and Tech Talent Pathway لم تُقرأ في قسمها الخاص (تحققنا من القسم غير Express Entry فقط).",
+    "حصة 2026 البالغة 5,261 (صفحة إحصاءات SINP) لم تُفتح في هذه الجولة؛ بقيت من الجولة السابقة."
+   ]
+  },
+  {
+   "id": "mb",
+   "checked_date": "2026-11-22",
+   "fields": [
+    {
+     "stream": "Skilled Worker in Manitoba",
+     "field": "eligibility_core",
+     "claim": "6 أشهر متواصلة بدوام كامل لدى نفس صاحب العمل ثم عرض طويل الأجل بدوام كامل (سنة لخريجي مقاطعات أخرى)؛ للعاملين حالياً في مانيتوبا",
+     "verdict": "confirmed",
+     "evidence": "صفحة الأهلية الرسمية تؤكد؛ وتضيف: لا تُحتسب فترات العمل الحر أو العمل أثناء الدراسة بدوام كامل؛ أصحاب الأعمال والمقاولون المستقلون ومن يُعفون من تصريح العمل غير مؤهلين.",
+     "source_url": "https://immigratemanitoba.com/mpnp/skilled-worker/swm/eligibility/"
+    },
+    {
+     "stream": "Skilled Worker Overseas",
+     "field": "eligibility_core",
+     "claim": "رابط بمانيتوبا (دعم قريب/صديق، خبرة مانيتوبا، أو دعوة استراتيجية) + 60 نقطة على الأقل؛ الأبناء لا يدعمون الآباء",
+     "verdict": "confirmed",
+     "evidence": "مؤكد بتفاصيله: الداعم مقيم سنة متواصلة على الأقل ومواطن/مقيم دائم؛ قائمة الأقارب المقبولين؛ الخبرة السابقة = 6 أشهر عمل بدوام كامل أو إتمام برنامج ما بعد ثانوي معتمد في مانيتوبا؛ شبكة النقاط (لغة 25، عمر 10، خبرة 15، تعليم 25، ارتباط 25).",
+     "source_url": "https://immigratemanitoba.com/mpnp/skilled-worker/swo/eligibility/"
+    },
+    {
+     "stream": "ALL (MPNP)",
+     "field": "language",
+     "claim": "اختبار معتمد خلال سنتين؛ TEER 4-5 يحتاج CLB 4؛ من يعمل في مانيتوبا في TEER 0-3 قد يُعفى",
+     "verdict": "confirmed",
+     "evidence": "صفحة Language Proficiency: كل المتقدمين يقدمون اختباراً (IELTS/CELPIP/PTE Core/TEF/TCF) لا يتجاوز عمره سنتين إلا العاملين حالياً في مانيتوبا في TEER 0-3؛ TEER 4-5 إلزامياً CLB/NCLC 4.",
+     "source_url": "https://immigratemanitoba.com/immigrate-to-manitoba/general-mpnp-policies/language-proficiency/"
+    },
+    {
+     "stream": "ALL (MPNP)",
+     "field": "funds",
+     "claim": "10,000$ + 2,000$ لكل مرافق (أو مبلغ IRCC مع ملف Express Entry)؛ دخل العامل في مانيتوبا يُحتسب",
+     "verdict": "confirmed",
+     "evidence": "صفحة Settlement Funds الرسمية تطابق الدليل حرفياً.",
+     "source_url": "https://immigratemanitoba.com/immigrate-to-manitoba/general-mpnp-policies/settlement-funds/"
+    },
+    {
+     "stream": "IES - Career Employment Pathway",
+     "field": "eligibility_core",
+     "claim": "CLB 7؛ تخرج خلال 3 سنوات من برنامج بدوام كامل سنة على الأقل في مؤسسة مانيتوبا معينة؛ عرض سنة على الأقل في مهنة مطلوبة مرتبطة بالدراسة",
+     "verdict": "confirmed",
+     "evidence": "مؤكد؛ إضافات: حاملو بكالوريوس فأعلى من مؤسسة مانيتوبا يقبلون بأي عرض TEER 0-3 من قائمة المهن المطلوبة حتى لو غير مرتبط بدراستهم؛ يلزم الإقامة في مانيتوبا عند التقديم وخطة Career Employment Plan.",
+     "source_url": "https://immigratemanitoba.com/mpnp/ies/cep/eligibility/"
+    },
+    {
+     "stream": "IES (CEP/GIP/ISEP)",
+     "field": "funds",
+     "claim": "10,000$ + 2,000$ لكل مرافق (كما في الدليل لكل المسارات)",
+     "verdict": "corrected",
+     "corrected_value": "صفحات أهلية IES تشترط أموالاً سائلة تعادل LICO لستة أشهر (CEP وGIP) أو 12 شهراً (ISEP) أو وظيفة بدوام كامل طويلة الأجل في مانيتوبا، وليس صيغة 10,000$+2,000$",
+     "evidence": "صفحات أهلية المسارات الثلاثة تنص على LICO؛ صفحة Settlement Funds العامة تذكر 10,000$+2,000$ كقاعدة عامة مع احتساب الدخل للعاملين في مانيتوبا.",
+     "source_url": "https://immigratemanitoba.com/mpnp/ies/cep/eligibility/",
+     "source_url_2": "https://immigratemanitoba.com/mpnp/ies/isep/eligibility/"
+    },
+    {
+     "stream": "IES - Graduate Internship Pathway",
+     "field": "language",
+     "claim": "حسب متطلبات المسار (لم يُعثر عليه)",
+     "verdict": "filled",
+     "corrected_value": "CLB/NCLC 7 كحد أدنى؛ ماجستير أو دكتوراه من مانيتوبا خلال آخر 3 سنوات + تدريب Mitacs Accelerate أو Elevate؛ لا يلزم عرض عمل",
+     "evidence": "صفحة أهلية GIP الرسمية.",
+     "source_url": "https://immigratemanitoba.com/mpnp/ies/gip/eligibility/"
+    },
+    {
+     "stream": "IES - International Student Entrepreneur Pilot",
+     "field": "eligibility_core",
+     "claim": "حسب معايير التجريبي (تفاصيل غير مكتملة)",
+     "verdict": "filled",
+     "corrected_value": "CLB 7؛ برنامج ما بعد ثانوي بدوام كامل سنتان في مانيتوبا؛ عمر 21-35؛ ملكية 51% على الأقل؛ إدارة يومية للعمل 6 أشهر قبل الترشيح بموجب BPA؛ حتى 20 مرشحاً سنوياً؛ حضور جلسة معلومات إلزامي؛ تصريح عمل مفتوح ساري",
+     "evidence": "صفحتا ISEP الرسميتان (الوصف والأهلية).",
+     "source_url": "https://immigratemanitoba.com/mpnp/ies/isep/eligibility/"
+    },
+    {
+     "stream": "Business Investor Stream - Entrepreneur Pathway",
+     "field": "language_and_criteria",
+     "claim": "حسب معايير المسار الحالية (غير مفصلة)",
+     "verdict": "filled",
+     "corrected_value": "CLB/NCLC 5 كحد أدنى؛ 3 سنوات ملكية أعمال أو إدارة عليا في آخر 5 سنوات؛ ثانوية كحد أدنى؛ صافي ثروة 500,000$ (تحقق طرف ثالث خلال 120 يوماً من LAA)؛ استثمار 250,000$ في مترو وينيبغ أو 150,000$ خارجه؛ إنشاء/الحفاظ على وظيفة واحدة لمواطن أو مقيم دائم",
+     "evidence": "صفحة أهلية EP الرسمية.",
+     "source_url": "https://immigratemanitoba.com/mpnp/bis/ep/eligibility/"
+    },
+    {
+     "stream": "Business Investor Stream - Farm Investor Pathway",
+     "field": "language_and_criteria",
+     "claim": "حسب معايير المسار الحالية (غير مفصلة)",
+     "verdict": "filled",
+     "corrected_value": "3 سنوات ملكية وتشغيل مزرعة موثقة؛ استثمار 300,000$ على الأقل في أصول ملموسة مؤهلة؛ صافي ثروة 500,000$؛ زيارة بحثية إلزامية؛ المقابلة بالإنجليزية أو الفرنسية؛ إقامة على المزرعة وإدارة فعلية لإنتاج أساسي",
+     "evidence": "صفحة أهلية FIP الرسمية.",
+     "source_url": "https://immigratemanitoba.com/mpnp/bis/fip/eligibility/"
+    },
+    {
+     "stream": "ALL (MPNP)",
+     "field": "fees",
+     "claim": "طلب العمال والتعليم الدولي 500$ غير مستردة؛ مستثمري الأعمال 2,500$",
+     "verdict": "confirmed",
+     "evidence": "صفحة LAA: رسوم 500$ غير مستردة تُدفع عند التقديم (Visa/Mastercard، متصفح Edge)؛ صفحة أسئلة BIS: رسوم طلب 2,500$ غير مستردة.",
+     "source_url": "https://immigratemanitoba.com/mpnp/apply/laa/",
+     "source_url_2": "https://immigratemanitoba.com/mpnp/faq/bis/"
+    },
+    {
+     "stream": "ALL (MPNP)",
+     "field": "draws_status",
+     "claim": "آخر سحب 22 أكتوبر 2026 (رقم 282)؛ سحوبات 273-282 من يونيو إلى أكتوبر",
+     "verdict": "stale",
+     "corrected_value": "السحوبات مستمرة: #283 في 5 نوفمبر 2026 (526 دعوة: اختيار مهني قطاعي 8-9 بـ448 + استراتيجية 78) و#284 في 19 نوفمبر 2026 (1,116 دعوة منها 1,050 لمواطني أوكرانيا ضمن SWM). سحب #282 (22 أكتوبر: 1,304 دعوات، أدنى نقاط 816 و846) مؤكد كما ورد.",
+     "evidence": "أرشيف السحوبات الرسمي.",
+     "source_url": "https://immigratemanitoba.com/draws/"
+    },
+    {
+     "stream": "Business Investor Stream",
+     "field": "eoi_status",
+     "claim": "لا سحوبات EOI حالياً؛ كل EOI يُراجع فردياً خلال 4 أسابيع",
+     "verdict": "confirmed",
+     "evidence": "أرشيف السحوبات الرسمي: EOI draws for the Business Investor Stream are not currently being conducted. All EOIs received are reviewed within four weeks.",
+     "source_url": "https://immigratemanitoba.com/draws/"
+    },
+    {
+     "stream": "IES - Career Employment Pathway",
+     "field": "status",
+     "claim": "منذ 11 يونيو 2026 يُدعى أصحاب 6 أشهر خبرة مانيتوبا للانتقال إلى SWM",
+     "verdict": "confirmed",
+     "evidence": "إعلان MPNP الرسمي بتاريخ 11 يونيو 2026 (دعوة مرشحي CEP أصحاب EOI النشطة و6 أشهر خبرة للانتقال إلى SWM بأولوية في السحوبات؛ GIP لم يتغير).",
+     "source_url": "https://immigratemanitoba.com/news/"
+    }
+   ],
+   "unverified": [
+    "مجانية تقديم EOI: صفحة EOI الرسمية لا تنص على رسوم أو مجانية صراحة؛ 'EOI مجاني' في الدليل لم يُتحقق منه نصاً (لا مؤشر على وجود رسوم).",
+    "مبالغ LICO الدقيقة المطبقة على مسارات IES (تُحسب من جداول IRCC السنوية ولم تُدرج رقمياً في صفحات MPNP)."
+   ]
+  },
+  {
+   "id": "qc",
+   "checked_date": "2026-11-22",
+   "fields": [
+    {
+     "stream": "PSTQ (الركائز الأربع)",
+     "field": "eligibility_core",
+     "claim": "تفاصيل الركائز الأربع (لغة/خبرة/تعليم) كما في الدليل",
+     "verdict": "confirmed",
+     "evidence": "صفحة الشروط الرسمية (آخر تحديث 11 نوفمبر 2026): شروط عامة (18+ سنة، نية الإقامة والعمل، عقد اكتفاء ذاتي 3 أشهر، شهادة تعلم القيم الديمقراطية والكيبيكية، الالتزام بشروط المنحة). الركيزة 1: مهنة FEER 0-2 غير منظمة، سنة خبرة بدوام كامل في المهنة خلال آخر 5 سنوات (داخل أو خارج كيبيك)، دبلوم مهني من برنامج سنة بدوام كامل، فرنسية شفهية 7 وكتابية 5 والزوج شفهي 4. الركيزة 2: FEER 3-5، سنتان خلال آخر 5 سنوات منهما سنة في كيبيك (خارج كيبيك حتى سنة واحدة وبنفس الفئة الكبرى)، فرنسية شفهية 5 والزوج 4، ثانوية أو DEP/ASP/AEC سنة. الركيزة 3: المهنة في قائمة المهن المنظمة للوزارة + رخصة ممارسة أو إثبات اعتراف جزئي/كامل لا يتجاوز عمره 5 سنوات (مهلة سنة من الدعوة للحصول عليه)، الفرنسية حسب FEER. الركيزة 4: 3 سنوات في المهنة خلال آخر 5 + إنجاز من قائمة الوزارة أو رأي شريك وزاري (اقتصاد استراتيجي/بحث/فنون/رياضة)؛ لا شرط فرنسية مدرجاً للركيزة 4.",
+     "source_url": "https://www.quebec.ca/en/immigration/permanent/skilled-workers/skilled-worker-selection-program/requirements"
+    },
+    {
+     "stream": "PSTQ",
+     "field": "invitation_rounds_2026",
+     "claim": "يناير-يونيو نحو 2,500 دعوة للجولة؛ يوليو-سبتمبر نحو 500؛ آخر جولة مدرجة 24 سبتمبر 2026",
+     "verdict": "corrected",
+     "corrected_value": "حسب صفحة دعوات Arrima الرسمية 2026: 29 يناير 1,094؛ 26 فبراير 907؛ 19-20 مارس 893؛ 30 أبريل 983؛ 4 يونيو 1,094؛ 3 يوليو 74؛ 30 يوليو 105؛ 27 أغسطس 87. لا جولة مدرجة في سبتمبر؛ آخر جولة منشورة 27 أغسطس 2026. جميع الجولات اشترطت الإقامة في كيبيك (staying in Québec).",
+     "evidence": "جدول الدعوات الرسمي لعام 2026. التباطؤ بعد يونيو مفسَّر بإعلان 10 يونيو 2026: تقليص دعوات PSTQ خلال فترة استقبال PEQ على أن تستأنف اعتباراً من نوفمبر 2026 بحسب حجم طلبات PEQ.",
+     "source_url": "https://www.quebec.ca/en/immigration/permanent/skilled-workers/skilled-worker-selection-program/invitation/2026",
+     "source_url_2": "https://www.quebec.ca/nouvelles/actualites/details/programme-de-lexperience-quebecoise-le-gouvernement-frechette-tient-promesse-le-peq-sera-reactive-pour-deux-ans-71024"
+    },
+    {
+     "stream": "PEQ",
+     "field": "status",
+     "claim": "مغلق منذ 31 أكتوبر 2026؛ فترة أولى 2 يوليو-31 أكتوبر 2026؛ لا قرار بفترة جديدة؛ إضافة/إزالة أفراد أسرة ممكنة",
+     "verdict": "confirmed",
+     "evidence": "صفحة PEQ الرسمية (آخر تحديث 29 أكتوبر 2026) تطابق؛ وإعلان 10 يونيو 2026 الرسمي: إعادة تفعيل PEQ لسنتين (2 يوليو 2026 - 2 يوليو 2028) بفترات استقبال، الأولى بلا سقف عددي، بمعيار استقبال يستهدف من حصل على الدبلوم أو سنتي الخبرة بتاريخ 19 نوفمبر 2025.",
+     "source_url": "https://www.quebec.ca/immigration/permanente/travailleurs-qualifies/programme-experience-quebecoise",
+     "source_url_2": "https://www.quebec.ca/nouvelles/actualites/details/reouverture-temporaire-programme-experience-quebecoise-peq-71235"
+    },
+    {
+     "stream": "PEQ - travailleurs",
+     "field": "language_experience",
+     "claim": "مستويات فرنسية حسب فئة PEQ؛ سنتان خبرة TEER 0-3",
+     "verdict": "filled",
+     "corrected_value": "فرنسية شفهية مستوى 7 (والزوج شفهي 4)؛ الإقامة القانونية في كيبيك كعامل أجنبي مؤقت (أو عطلة-عمل/مهنيين شباب/تدريب Coop)؛ عمل حالي وخبرة 24 شهراً من آخر 36 شهراً في مهن FEER 0-3 بدوام كامل (30 ساعة مدفوعة أسبوعياً) وبشكل قانوني؛ العمل غير المتصل يُحتسب إن كان بدوام كامل",
+     "evidence": "صفحة شروط فئة العمال الرسمية.",
+     "source_url": "https://www.quebec.ca/immigration/permanente/travailleurs-qualifies/programme-experience-quebecoise/conditions-selection/travailleurs-temporaires"
+    },
+    {
+     "stream": "PEQ - diplômés",
+     "field": "language_education",
+     "claim": "دبلوم كيبيك مؤهل محصل عليه بحلول 19 نوفمبر 2025؛ مستويات لغة غير مفصلة",
+     "verdict": "filled",
+     "corrected_value": "فرنسية شفهية 7 وكتابية 5 (والزوج شفهي 4)؛ دبلوم مؤهل (بكالوريوس/ماجستير/دكتوراه، DEC تقني، DEP بـ1,800 ساعة+ أو DEP+ASP بـ1,800 ساعة متصلة) حاصل عليه خلال 36 شهراً قبل الطلب في برنامج بدوام كامل بمؤسسة كيبيكية، مع الإقامة في كيبيك للدراسة نصف مدة البرنامج على الأقل. تاريخ 19 نوفمبر 2025 هو معيار استقبال الفترة الأولى (من أنجز الدبلوم/الخبرة بذلك التاريخ)، وشرط البرنامج بالفرنسية أُزيل عند إعادة الفتح",
+     "evidence": "صفحة شروط فئة الخريجين الرسمية + إعلان 17 يونيو 2026.",
+     "source_url": "https://www.quebec.ca/immigration/permanente/travailleurs-qualifies/programme-experience-quebecoise/conditions-selection/diplomes-quebec"
+    },
+    {
+     "stream": "Quebec Investor Program",
+     "field": "language_fees_status",
+     "claim": "مفتوح؛ صافي أصول 2,000,000$؛ متطلبات فرنسية ورسوم غير مفصلة",
+     "verdict": "filled",
+     "corrected_value": "مفتوح (التقديم في أي وقت). فرنسية شفهية مستوى 7 إلزامية (اختبارات مقبولة TCF/TEF/DELF/DALF بنتائج أقل من سنتين)؛ سنتان خبرة إدارية في آخر 5 سنوات؛ دبلوم ثانوية أو برنامج مهني سنة؛ استثمار مليون دولار لخمس سنوات عبر وسيط مالي + مساهمة مالية 200,000$ لصالح Investissement Québec؛ إقامة 12 شهراً في كيبيك خلال سنتين من تصريح العمل؛ رسوم الطلب 18,241$ (2026)",
+     "evidence": "صفحة شروط المستثمر الرسمية (آخر تحديث 20 نوفمبر 2026) + جدول رسوم الوزارة 2026.",
+     "source_url": "https://www.quebec.ca/en/immigration/permanent/immigrate-business/investors/conditions",
+     "source_url_2": "https://cdn-contenu.quebec.ca/cdn-contenu/immigration/publications/en/TAB_fees_2026.pdf"
+    },
+    {
+     "stream": "Quebec Entrepreneur Program",
+     "field": "language_funds_status",
+     "claim": "مفتوح؛ متطلبات فرنسية وأموال حسب المعايير (غير مفصلة)",
+     "verdict": "filled",
+     "corrected_value": "مفتوح بثلاثة مكونات (مشروع مبتكر، إنشاء عمل، استحواذ). فرنسية شفهية مستوى 7 إلزامية في الجميع. مكون إنشاء العمل: سنتان إدارة أعمال في آخر 5 سنوات؛ صافي ثروة 600,000$ لملف الإنشاء أو 300,000$ لملف عمل قائم. المكون المبتكر: مساهمة 10% في رأس المال الأصلي ودعم منظمة متخصصة بالابتكار. رسوم الطلب 1,272$ (2026)",
+     "evidence": "صفحات شروط المكونات الثلاثة الرسمية + جدول رسوم 2026.",
+     "source_url": "https://www.quebec.ca/en/immigration/permanent/immigrate-business/entrepreneurs/start-acquire-business/conditions",
+     "source_url_2": "https://www.quebec.ca/en/immigration/permanent/immigrate-business/entrepreneurs/start-operate-innovative-business/conditions"
+    },
+    {
+     "stream": "Quebec Self-Employed Worker Program",
+     "field": "language_funds_status",
+     "claim": "مفتوح؛ متطلبات غير مفصلة",
+     "verdict": "filled",
+     "corrected_value": "سنتان خبرة عمل لحسابك في المهنة خلال آخر 5 سنوات؛ صافي ثروة 100,000$؛ فرنسية شفهية مستوى 7؛ وديعة بدء 25,000$ خارج منطقة مونتريال الكبرى أو 50,000$ داخلها؛ دبلوم ثانوية أو مهني سنة؛ للمهن المنظمة رخصة أو إثبات اعتراف ≤5 سنوات؛ رسوم الطلب 1,272$ (2026)",
+     "evidence": "صفحة شروط العامل لحسابه الرسمية + جدول رسوم 2026.",
+     "source_url": "https://www.quebec.ca/en/immigration/permanent/immigrate-business/self-employed-workers/conditions"
+    },
+    {
+     "stream": "QC (كل برامج الاختيار الدائم)",
+     "field": "fees",
+     "claim": "راجع جدول رسوم كيبيك (غير مفصلة في الدليل)",
+     "verdict": "filled",
+     "corrected_value": "رسوم 2026 (من 1 يناير 2026): عامل ماهر (PSTQ/PEQ) 940$ للمقدم الرئيسي + 201$ للزوج/الشريك + 201$ لكل طفل؛ مستثمر 18,241$؛ رائد أعمال/عامل لحسابه 1,272$؛ طلب صاحب عمل تصديق عرض عمل دائم 233$؛ غير مستردة",
+     "evidence": "صفحة تقديم طلب PSTQ الرسمية (940$/201$) + جدول رسوم الوزارة الرسمي 2026 (PDF).",
+     "source_url": "https://www.quebec.ca/en/immigration/permanent/skilled-workers/skilled-worker-selection-program/applying",
+     "source_url_2": "https://cdn-contenu.quebec.ca/cdn-contenu/immigration/publications/en/TAB_fees_2026.pdf"
+    },
+    {
+     "stream": "QC (program level)",
+     "field": "ministry_name",
+     "claim": "إعادة تسمية الوزارة (من المرجع الثانوي)",
+     "verdict": "confirmed",
+     "evidence": "الصفحات الرسمية المحدثة في نوفمبر 2026 توقع باسم ministère de l'Immigration et de l'Intégration بينما بيانات يونيو 2026 كانت باسم Immigration, Francisation et Intégration (MIFI)؛ الاسم الحالي للوزارة: ministère de l'Immigration et de l'Intégration.",
+     "source_url": "https://www.quebec.ca/en/immigration/permanent/skilled-workers/skilled-worker-selection-program/requirements"
+    }
+   ],
+   "unverified": [
+    "انتهاء البرامج التجريبية الدائمة (تصنيع الأغذية، الممرضات المساعدات، الذكاء الاصطناعي/تقنية المعلومات) في 1 يناير 2026: لم تُفتح صفحاتها في هذه الجولة.",
+    "استئناف دعوات PSTQ في نوفمبر 2026 فعلياً: الإعلان ينص على الاستئناف اعتباراً من نوفمبر بحسب حجم PEQ، لكن لا جولة بعد 27 أغسطس مدرجة في صفحة 2026 حتى تاريخ الفحص.",
+    "جداول مبالغ الاكتفاء الذاتي الكيبيكية بالأرقام (PDF فرنسي لم يُفتح).",
+    "خطة كيبيك 2026 (45,000 مقيماً دائماً) لم تُفتح في مصدرها في هذه الجولة."
+   ]
+  }
+ ],
+ "remaining_unverified_summary": "كل حقل أعلاه مصنف unverified لم يُعثر عليه في المصدر الرسمي المالك الذي فُحص في 22 نوفمبر 2026؛ هذا لا ينفي نشره في مكان آخر (government unpublished vs not found غير مؤكد).",
+ "sources_consulted": [
+  "saskatchewan.ca: صفحات مسارات SINP الثمانية + صفحة نظام EOI + ملحق رسوم 2026-27 + صفحتا procedures-and-guidelines",
+  "immigratemanitoba.com: صفحات أهلية SWM/SWO/CEP/GIP/ISEP/EP/FIP + Language Proficiency + Settlement Funds + LAA fee + أسئلة BIS + أرشيف السحوبات + أخبار (إعلان 11 يونيو 2026)",
+  "quebec.ca: شروط PSTQ (محدثة 11 نوفمبر 2026) + دعوات Arrima 2026 + صفحات PEQ وشروط فئتيها + شروط المستثمر (محدثة 20 نوفمبر 2026) + شروط رواد الأعمال الثلاثة + شروط العامل لحسابه + صفحة تقديم PSTQ + جدول رسوم 2026 + إعلانا 10 و17 يونيو 2026"
+ ]
+}
