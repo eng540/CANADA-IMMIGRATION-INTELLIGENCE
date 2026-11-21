@@ -14,15 +14,17 @@ hard_gates:
     source: card field 8 / S28
     if_fail: غير مؤهل — لا خبرة كندية مستوفاة (وجه لمسارات بدون خبرة كندية مثل FSW)
   - id: language_by_teer
-    rule: TEER 0-1: CLB/NCLC 7 · TEER 2-3: CLB/NCLC 5 (القدرات الأربع)
+    rule: "TEER 0-1: CLB/NCLC 7 · TEER 2-3: CLB/NCLC 5 (القدرات الأربع)"
     source: card field 9 / S26
     if_unknown: محتمل — مستوى اللغة غير معروف
   - id: admissibility
     rule: قبول عام
     source: card field 14 / S28
+    if_fail: غير مؤهل — عدم قبول عام (طبي/أمني)
   - id: quebec_intent
     rule: نية سكن خارج كيبيك (خبرة كيبيك تُحتسب مع إثبات عدم نية الاستقرار)
     source: S28
+    if_fail: غير مؤهل عبر هذا البرنامج — نية سكن في كيبيك (تُوجَّه لمسارات كيبيك)
 no_requirement:
   - education (نقاط فقط) / S28
   - job_offer / S28
