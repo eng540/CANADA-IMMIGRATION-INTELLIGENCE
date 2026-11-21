@@ -23,10 +23,10 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install mkdocs-material
-      - run: mkdocs build -f site/mkdocs.yml -d ../site-build
+      - run: mkdocs build -f site/mkdocs.yml -d /tmp/site-build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site-build
+          path: /tmp/site-build
   deploy:
     needs: build
     runs-on: ubuntu-latest
