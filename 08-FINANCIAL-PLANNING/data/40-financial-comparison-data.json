@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "checked_date": "2026-11-22",
+    "timezone": "Asia/Riyadh",
+    "currency": "CAD",
+    "disclaimer_ar": "كل القيم ديناميكية وتتغير. الجداول مؤرخة ومرتبطة بمصادر رسمية. تحقق من المصدر قبل الاعتماد. لا ضمانات لأوقات المعالجة أو الأسعار.",
+    "disclaimer_en": "All values are dynamic and dated. Verify against the official source before relying on them. Processing times are not guarantees."
+  },
+  "ircc_fees": {
+    "source": "https://ircc.canada.ca/english/information/fees/fees.asp",
+    "retrieved": "2026-11-22",
+    "temporary_residence": {
+      "eta": 7.0,
+      "visitor_visa_per_person": 100.0,
+      "visitor_visa_family_max_5plus": 500.0,
+      "visitor_extension_per_person": 100.0,
+      "study_permit_per_person": 150.0,
+      "work_permit_per_person": 155.0,
+      "open_work_permit_holder_fee": 100.0,
+      "restore_visitor_status": 246.25,
+      "restore_student_status_plus_new_permit": 396.25,
+      "restore_worker_status_plus_new_permit": 401.25,
+      "temporary_resident_permit": 246.25,
+      "iec_fee": 184.75
+    },
+    "permanent_residence_economic": {
+      "applies_to": ["Atlantic immigration program", "Canadian experience class", "Federal skilled workers", "Federal skilled trades", "Provincial nominee", "Rural or francophone community immigration pilots", "Quebec-selected skilled workers", "Home Care Worker Immigration Pilots 2025"],
+      "principal_applicant_incl_rprf": 1590.0,
+      "principal_applicant_excl_rprf": 990.0,
+      "spouse_incl_rprf": 1590.0,
+      "spouse_excl_rprf": 990.0,
+      "dependent_child_each": 270.0
+    },
+    "rprf": {
+      "amount": 600.0,
+      "refundable_if_withdrawn_or_refused": true,
+      "exempt": ["dependent children of principal applicant or sponsor", "adopted children sponsorships", "orphaned relatives sponsorships", "protected persons and eligible H&C applicants", "convention refugees"]
+    },
+    "business_immigration": {"principal_incl_rprf": 2495.0, "spouse_incl_rprf": 1590.0, "dependent_child_each": 270.0},
+    "humanitarian_and_compassionate": {"principal_incl_rprf": 1260.0, "spouse_incl_rprf": 1260.0, "dependent_child_each": 180.0},
+    "family_sponsorship": {"spouse_or_partner_incl_all": 1260.0, "dependent_child": 180.0, "parent_or_grandparent": 1260.0},
+    "citizenship": {"adult": 653.0, "minor": 100.0},
+    "pr_card": 50.0,
+    "pr_travel_document": 50.0,
+    "employer_compliance_fee_imp": 230.0,
+    "verify_status_or_replace_document": 30.0,
+    "biometrics": {"individual": 85.0, "family_max": 170.0, "performing_artists_group_max": 255.0, "transit_visa": 0.0}
+  },
+  "proof_of_funds_express_entry": {
+    "source": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html",
+    "table_updated": "2025-07-07",
+    "retrieved": "2026-11-22",
+    "live_reverification": "live page re-opened 2026-11-22; the table shown is still the one marked Updated July 7, 2025 (2 members = 19001 CAD); no newer 2026 table exists as of this date",
+    "required_for": ["Federal Skilled Worker Program", "Federal Skilled Trades Program"],
+    "not_required_for": ["Canadian Experience Class", "applicants authorized to work in Canada with a valid job offer (even under FSW/FST)"],
+    "amounts_cad": {"1": 15263, "2": 19001, "3": 23360, "4": 28362, "5": 32168, "6": 36280, "7": 40392, "each_additional": 4112},
+    "rules": [
+      "family size includes applicant, spouse/partner, dependent children of both, even if Canadian citizens/PRs or not accompanying",
+      "official bank letters required: balances, 6-month average, account numbers, debts",
+      "funds must be legally accessible at application and at visa issuance; no real-estate equity; no borrowed money"
+    ]
+  },
+  "study_permit_financial_support": {
+    "source": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html",
+    "retrieved": "2026-11-22",
+    "note": "living expenses only, excludes tuition and transportation; updated annually; Quebec follows MIFI/CAQ requirements",
+    "window_2025_01_01_to_2026_08_31_non_quebec": {"1": 22895, "2": 28502, "3": 35040, "4": 42543, "5": 48252, "6": 54420, "7": 60589, "each_additional": 6170},
+    "window_from_2026_09_01_non_quebec": {"1": 23448, "2": 29192, "3": 35888, "4": 43572, "5": 49419, "6": 55736, "7": 62054, "each_additional": 6318}
+  },
+  "biometrics": {
+    "sources": [
+      "https://www.canada.ca/en/immigration-refugees-citizenship/services/biometrics.html",
+      "https://www.canada.ca/en/immigration-refugees-citizenship/services/biometrics/when-to-give-temporary-residence.html",
+      "https://www.canada.ca/en/immigration-refugees-citizenship/services/biometrics/when-to-give-permanent-residence.html"
+    ],
+    "retrieved": "2026-11-22",
+    "exemptions": ["Canadian citizens and citizenship applicants", "existing permanent residents (except specific PR card renewal case)", "visa-exempt visitors applying for eTA", "children 13 or under at submission", "applicants 80 or over at submission (no age exemption for asylum claimants)", "heads of state/government", "diplomatic/official visa holders", "valid US visa holders transiting Canada", "TR applicants who gave biometrics for a PR application still in process"],
+    "reuse": {
+      "temporary_residence_validity_years": 10,
+      "permanent_residence": "must give biometrics with every new PR application",
+      "pr_biometrics_reusable_for_tr_while_pr_open": true
+    },
+    "vac": {
+      "official_finder": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/find-visa-application-centre.html",
+      "saudi_arabia": {"operator": "VFS Global", "operator_url": "https://visa.vfsglobal.com/sau/en/can", "city_confirmed_in_directory": "Al Khobar", "note": "confirm all cities and hours on VFS page before visiting"},
+      "yemen": {"vac_in_country": false, "note": "no VAC listed in the official directory as of 2026-11-22; applicants use a VAC in another country per the official finder"}
+    }
+  },
+  "medical_exam": {
+    "source": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/medical-exams/requirements-permanent-residents.html",
+    "panel_physician_finder": "https://www.cic.gc.ca/pp-md/pp-list.aspx",
+    "retrieved": "2026-11-22",
+    "facts": {
+      "express_entry": "upfront exam after ITA, before applying; results must be valid at submission and at landing; requirement reinstated effective 2025-08-21 for EE applications submitted on or after that date, reversing the 2023-10-01 policy (date sourced from legal-firm summaries of the IRCC announcement, e.g. Fragomen 2025-08-12; the rule itself confirmed on the live official page 2026-11-22)",
+      "other_pr_applications": "after IRCC instructions, within 30 days",
+      "temporary_residence": "generally no IME unless specified situations (public-health jobs, long stays from designated countries); see requirements-temporary-residents page",
+      "in_canada_exemption": "temporary public policy exempting certain in-Canada foreign nationals extended to 2029-10-05; applicants with an IME within 5 years include the IME number",
+      "validity_months": 12,
+      "cost": "paid by applicant at appointment; varies by physician and country; not refunded on refusal; refugees/asylum seekers may be exempt"
+    }
+  },
+  "police_certificates": {
+    "general": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates/about.html",
+    "saudi_arabia": {
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates/how/saudi-arabia.html",
+      "retrieved": "2026-11-22",
+      "document": "Criminal Record Certificate",
+      "process": "IRCC sends a request then a facilitation letter via the IRCC Riyadh web form; apply in person at Criminal Evidence Division or via the Amen portal with an active Absher account; MOI recommends the in-person route for international use (MOFA attestation only for in-person certificates)",
+      "non_residents": "certificates only available to non-citizens with current legal residence; those on final exit may be unable to obtain one; exact official sentence to state if asked: 'I cannot provide a police certificate for the time I spent in Saudi Arabia because certificates are only available to people who have current legal residence status.'"
+    },
+    "yemen": {
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates/how/yemen.html",
+      "retrieved": "2026-11-22",
+      "document": "Criminal Status Sheet",
+      "process": "citizens apply in person at the Office of the Deputy General Director, or via a representative with power of attorney if abroad; non-citizens resident 6+ months apply in person with the Canadian embassy request letter and valid residence"
+    }
+  },
+  "translation": {
+    "sources": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/apply-permanent-residence.html", "https://www.ircc.canada.ca/english/helpcentre/answer.asp?qnum=1561"],
+    "retrieved": "2026-11-22",
+    "rule": "documents not in English or French must be uploaded with an English or French translation plus a scan of the original (or certified photocopy if the translation was based on one); all non-EN/FR stamps and seals must also be translated",
+    "affidavit": "conditional: no affidavit needed when the translation is stamped by a certified translator (an explanatory letter may be included); an affidavit sworn before an authorized commissioner is required only when a translation cannot be completed by a certified translator, and must reference both the translation and the source document",
+    "restrictions": ["family members, representatives and consultants of the applicant may not translate documents, even if lawyers, notaries or translators", "a translator still in the process of certification does not count as a certified translator for IRCC"]
+  },
+  "language_tests": {
+    "source": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-requirements.html",
+    "retrieved": "2026-11-22",
+    "accepted_english": ["CELPIP General", "IELTS General Training", "PTE Core"],
+    "accepted_french": ["TEF Canada", "TCF Canada"],
+    "scope_note": "Express Entry programs require a test; work permit applications themselves have no IRCC language test; study permits follow the institution's requirements. No universal language test for all permits.",
+    "example_cost_third_party": {"ielts_computer_ksa_sar": 1705, "ielts_ukvi_ksa_sar": 1815, "as_of": "2026-11-05", "source": "ksaexpatguide.com reading of British Council and IDP Saudi pages", "warning": "third party, verify with provider"}
+  },
+  "eca": {
+    "source": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessed.html",
+    "retrieved": "2026-11-22",
+    "needed_for": ["FSW principal applicant eligibility", "CRS points for foreign education (applicant and accompanying spouse)"],
+    "not_needed_for": ["Canadian credentials", "work permits and study permits in general"],
+    "designated_orgs": ["Comparative Education Service (U of Toronto)", "ICAS", "WES", "IQAS", "ICES (BCIT)"],
+    "professional_bodies": {"architects_NOC_21200": "CACB", "physicians": "Medical Council of Canada"},
+    "validity_years": 5,
+    "example_cost": {"wes_eca_cad_from": 264, "as_of": "2026-11-22", "source": "https://www.wes.org/evaluations/"}
+  },
+  "processing_times": {
+    "methodology_source": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=068",
+    "tool_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html",
+    "methodology": "backward-looking (80% of past cases) or forward-looking (inventory, capacity, levels plan); starts at complete application receipt, ends at decision; not a maximum or a guarantee",
+    "snapshot_dates": {"temporary_residence_country_table": "2026-11-18", "pr_forward_looking": "2026-11-17"},
+    "reproducibility": {
+      "country_based_tr_values": "https://www.canada.ca/content/dam/ircc/documents/json/data-ptime-en.json (last updated stamped 2026-11-18); tool selections: Temporary residence, then application type, then country Saudi Arabia (code SA) or Yemen (code YE); 'no time available' means the tool shows no value for that country",
+      "forward_looking_pr_values": "https://www.canada.ca/content/dam/ircc/documents/json/flpt-en.json (last updated stamped 2026-11-17); tool selections by program name",
+      "fallback": "if the data files are unreachable or differ, the interactive tool with the same selections is the reference; treat any other value as unverified"
+    },
+    "temporary_residence_from": {
+      "Saudi Arabia": {"visitor_visa_days": 37, "super_visa_days": 77, "study_permit": "4 weeks", "work_permit": "5 weeks"},
+      "Yemen": {"visitor_visa_days": 52, "super_visa": "no time available", "study_permit": "no time available", "work_permit": "no time available"}
+    },
+    "permanent_residence_and_citizenship": {
+      "cec": "6 months",
+      "fsw": "about 9 months",
+      "fst": "not enough data",
+      "pnp_express_entry": "about 7 months",
+      "pnp_base": "about 12 months",
+      "atlantic": "about 25 months",
+      "quebec_skilled_workers": "11 months",
+      "spousal_abroad_non_quebec": "about 19 months",
+      "spousal_in_canada_non_quebec": "about 27 months",
+      "parents_grandparents_non_quebec": "about 26 months",
+      "startup_visa": "more than 10 years",
+      "self_employed": "more than 10 years",
+      "citizenship_grant": "about 12 months",
+      "pr_card_new_days": 32,
+      "pr_card_renewal_days": 50
+    }
+  },
+  "employer_funded_branch": {
+    "sources": ["https://www.canada.ca/en/employment-social-development/services/foreign-workers/median-wage/low/requirements.html", "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1306"],
+    "retrieved": "2026-11-22",
+    "employer_must_pay_not_worker": {
+      "lmia_fee_per_position_cad": 1000,
+      "lmia_fee_refund": "not refunded on withdrawal or negative LMIA; cannot be paid by or recovered from the worker",
+      "lmia_fee_exemptions": ["in-home caregivers for medical needs with certificate", "childcare in home, family gross income 150000 or less", "on-farm primary agriculture NOC 80020 80021 82030 82031 84120 85100 85101 85103"],
+      "recruitment_and_rep_fees": "cannot be charged to or recovered from the worker",
+      "low_wage_stream_transport": "employer pays round-trip transportation, not recoverable",
+      "low_wage_stream_housing": "suitable affordable housing under 30% of before-tax income (CMHC definitions)",
+      "low_wage_stream_health_insurance": "employer covers until public coverage applies"
+    },
+    "worker_typically_still_pays": ["work permit fee 155 CAD", "biometrics 85 CAD unless exempt or valid within 10 years", "medical exam (varies)", "documents, translations, police certificates", "biometrics travel if no local VAC"],
+    "concept_note": "IRCC fee liability does not require personal payment by the applicant; an employer or sponsor may pay government fees. The reverse is prohibited for LMIA and recruitment fees: those may never be charged to the worker."
+  },
+  "province_comparison": {
+    "minimum_wages": {
+      "source": "https://minwage-salairemin.service.canada.ca/en/general.html",
+      "page_last_modified": "2026-11-21",
+      "retrieved": "2026-11-22",
+      "rates_cad_per_hour": {
+        "federal": {"rate": 18.15, "effective": "2026-04-01"},
+        "alberta": {"rate": 15.0, "effective": "2019-06-26"},
+        "british_columbia": {"rate": 18.25, "effective": "2026-06-01"},
+        "manitoba": {"rate": 16.4, "effective": "2026-10-01"},
+        "new_brunswick": {"rate": 15.9, "effective": "2026-04-01"},
+        "newfoundland_and_labrador": {"rate": 16.35, "effective": "2026-04-01"},
+        "northwest_territories": {"rate": 17.2, "effective": "2026-09-01"},
+        "nova_scotia": {"rate": 17.0, "effective": "2026-10-01"},
+        "nunavut": {"rate": 20.17, "effective": "2026-09-01"},
+        "ontario": {"rate": 17.95, "effective": "2026-10-01"},
+        "prince_edward_island": {"rate": 17.3, "effective": "2026-10-01", "upcoming": {"rate": 17.6, "effective": "2027-04-01"}},
+        "quebec": {"rate": 16.6, "effective": "2026-05-01"},
+        "saskatchewan": {"rate": 15.7, "effective": "2026-10-01"},
+        "yukon": {"rate": 18.51, "effective": "2026-04-01"}
+      }
+    },
+    "lmia_wage_thresholds_median_plus_20pct": {
+      "source": "https://www.canada.ca/en/employment-social-development/services/foreign-workers/median-wage.html",
+      "retrieved": "2026-11-22",
+      "until_2026_07_16": {"alberta": 36.0, "british_columbia": 36.6, "manitoba": 30.16, "new_brunswick": 30.0, "newfoundland_and_labrador": 32.4, "northwest_territories": 48.0, "nova_scotia": 30.0, "nunavut": 42.0, "ontario": 36.0, "prince_edward_island": 30.0, "quebec": 34.62, "saskatchewan": 33.6, "yukon": 44.4},
+      "from_2026_07_17": {"alberta": 37.5, "british_columbia": 38.4, "manitoba": 31.33, "new_brunswick": 31.73, "newfoundland_and_labrador": 33.6, "northwest_territories": 48.0, "nova_scotia": 31.96, "nunavut": 45.0, "ontario": 36.92, "prince_edward_island": 31.2, "quebec": 36.0, "saskatchewan": 34.62, "yukon": 45.6}
+    },
+    "rents_cmhc_fall_2025_survey_october_2025": {
+      "report_url": "https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/market-reports/rental-market-reports-major-centres",
+      "national": {"purpose_built_vacancy_pct": 3.1, "avg_2bed_all_tenants_cad": 1550, "same_sample_growth_pct": 5.1, "condo_avg_2bed_cad": 2305},
+      "turnover_2bed_avg_rent_cad": {
+        "vancouver": {"2022": 2325, "2023": 2601, "2024": 2883, "2025": 2696},
+        "toronto": {"2022": 2110, "2023": 2405, "2024": 2612, "2025": 2547},
+        "ottawa": {"2022": 1829, "2023": 1903, "2024": 2118, "2025": 2155},
+        "halifax": {"2022": 1762, "2023": 1705, "2024": 2116, "2025": 2058},
+        "calgary": {"2022": 1486, "2023": 1771, "2024": 1927, "2025": 1836},
+        "montreal": {"2022": 1235, "2023": 1310, "2024": 1407, "2025": 1644},
+        "edmonton": {"2022": 1297, "2023": 1400, "2024": 1560, "2025": 1600}
+      },
+      "benchmark_warning": "survey benchmarks, not live listings; turnover rents exceed sitting-tenant averages"
+    },
+    "cost_of_living_official_benchmark": {
+      "mbm": {"description": "Canada's official poverty line, 2023 base, reference family of 4", "release": "https://www150.statcan.gc.ca/n1/daily-quotidien/251107/dq251107f-eng.htm", "released": "2025-11-07", "tables": ["11-10-0066-01", "11-10-0104-01"]}
+    },
+    "health_coverage_examples": {
+      "ontario": {"waiting_period": "none", "source": "https://www.ontario.ca/page/apply-ohip-and-get-health-card", "retrieved": "2026-11-22"},
+      "british_columbia": {"waiting_period": "remainder of residency month plus 2 months", "source": "https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/msp/bc-residents/eligibility-and-enrolment/how-to-enrol/coverage-wait-period", "page_updated": "2026-06-04"}
+    },
+    "small_communities": {
+      "source": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots.html",
+      "retrieved": "2026-11-22",
+      "rcip_closes": "2027-01-01",
+      "successor": "permanent Rural Community Immigration Program",
+      "rural_communities": ["Pictou County NS", "North Bay and Area ON", "Sudbury ON", "Timmins ON", "Sault Ste. Marie ON", "Thunder Bay ON", "Steinbach MB", "Altona/Rhineland MB", "Brandon MB", "Moose Jaw SK", "Claresholm AB", "West Kootenay BC", "North Okanagan Shuswap BC", "Peace Liard BC"],
+      "francophone_communities": ["Acadian Peninsula NB", "Sudbury ON", "Timmins ON", "Superior East Region ON", "St. Pierre Jolys MB", "Kelowna BC"]
+    },
+    "live_tools": {
+      "job_bank_wages": "https://www.jobbank.gc.ca/trend-analysis/search-wages",
+      "cmhc_data_portal": "https://www.cmhc-schl.gc.ca",
+      "statcan": "https://www150.statcan.gc.ca"
+    }
+  },
+  "calculator_assumptions": {
+    "inputs": ["pathway", "family_size_per_ircc_rules", "country_of_application", "needs_language_test", "needs_eca", "fx_rate_fetched_at_runtime"],
+    "sample_family_of_4_ee_nov2026": {"ircc_fees_total": 3720, "biometrics_family": 170, "pof_minimum_display_not_spend": 28362, "eca_from": 264, "language_test": "provider specific", "medical": "physician specific", "translations_police_travel": "local variable"},
+    "rules": ["proof of funds is a display requirement, not an expense", "fx rate must be fetched at calculation time, never hardcoded", "language test and ECA are pathway conditional, not universal"]
+  }
+}
