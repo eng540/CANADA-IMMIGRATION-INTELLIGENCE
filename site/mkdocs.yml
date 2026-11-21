@@ -82,7 +82,22 @@ nav:
     - برامج خاصة:
       - الخبرة الدولية IEC: 03-ALL-PROGRAMS/special/iec-working-holiday.md
     - برامج المقاطعات:
+      - 03-ALL-PROGRAMS/provincial/README.md
+      - أونتاريو OINP: 03-ALL-PROGRAMS/provincial/ontario-oinp.md
+      - كولومبيا البريطانية BC PNP: 03-ALL-PROGRAMS/provincial/bc-pnp.md
+      - ألبرتا AAIP: 03-ALL-PROGRAMS/provincial/alberta-aaip.md
+      - ساسكاتشوان SINP: 03-ALL-PROGRAMS/provincial/saskatchewan-sinp.md
+      - مانيتوبا MPNP: 03-ALL-PROGRAMS/provincial/manitoba-mpnp.md
+      - كيبيك (النظام المستقل): 03-ALL-PROGRAMS/provincial/quebec-system.md
       - كيبيك للأعمال: 03-ALL-PROGRAMS/provincial/quebec-business.md
+      - نيو برونزويك: 03-ALL-PROGRAMS/provincial/new-brunswick-npnp.md
+      - نوفا سكوشا: 03-ALL-PROGRAMS/provincial/nova-scotia-nsnp.md
+      - جزيرة الأمير إدوارد: 03-ALL-PROGRAMS/provincial/pei-pnp.md
+      - نيوفاوندلاند ولابرادور: 03-ALL-PROGRAMS/provincial/newfoundland-nlpnp.md
+      - يوكون: 03-ALL-PROGRAMS/provincial/yukon-ynp.md
+      - الأقاليم الشمالية الغربية: 03-ALL-PROGRAMS/provincial/nwt-ntnp.md
+      - نونافوت: 03-ALL-PROGRAMS/provincial/nunavut.md
+      - سجل تحقق المصادر: 03-ALL-PROGRAMS/provincial/provenance-ledger.md
     - موقوفة ومغلقة:
       - PGP الوالدين والأجداد: 03-ALL-PROGRAMS/closed-paused/pgp-parents-grandparents.md
       - SUV الشركات الناشئة: 03-ALL-PROGRAMS/closed-paused/suv-startup-visa.md
@@ -102,6 +117,7 @@ nav:
     - نموذج بيانات المتقدم: 07-DECISION-ENGINE/applicant-data-model.md
     - خوارزمية الأهلية: 07-DECISION-ENGINE/eligibility-algorithm.md
     - خرائط الانتقال بين المسارات: 07-DECISION-ENGINE/transition-maps.md
+    - حالات اختبار تتبعية: 07-DECISION-ENGINE/tests/test-cases.md
   - التخطيط المالي:
     - 08-FINANCIAL-PLANNING/README.md
     - الرسوم وإثبات الأموال وأوقات المعالجة: 08-FINANCIAL-PLANNING/fees-funds-processing.md
@@ -109,7 +125,13 @@ nav:
     - 09-LEGAL-AND-RISK/README.md
     - كشف الاحتيال وحماية المتقدم: 09-LEGAL-AND-RISK/fraud-detection.md
     - تحذيرات مركزية: 09-LEGAL-AND-RISK/central-warnings.md
-  - الأدوات العملية: 10-PRACTICAL-TOOLS/README.md
+  - الأدوات العملية:
+    - 10-PRACTICAL-TOOLS/README.md
+    - قوائم تحقق قبل التقديم: 10-PRACTICAL-TOOLS/checklists.md
+    - جداول مقارنة سريعة: 10-PRACTICAL-TOOLS/comparison-tables.md
+    - حاسبة التكلفة: 10-PRACTICAL-TOOLS/cost-calculator.md
+    - سجل متابعة الطلب: 10-PRACTICAL-TOOLS/application-tracker.md
+    - أدوات البحث عن عمل: 10-PRACTICAL-TOOLS/job-search-tools.md
   - خارطة الطريق الشخصية: 11-PERSONAL-ROADMAP/README.md
   - المصادر والتحديثات:
     - سجل المصادر: 12-SOURCES-AND-UPDATES/source-log.md
