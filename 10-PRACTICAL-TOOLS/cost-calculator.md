@@ -29,7 +29,10 @@
 | 2 | 19,001 |
 | 3 | 23,360 |
 | 4 | 28,362 |
-| 5+ | انظر الجدول الرسمي (يزداد ~3,361 للفرد الإضافي) |
+| 5 | 32,168 |
+| 6 | 36,280 |
+| 7 | 40,392 |
+| كل فرد إضافي فوق 7 | +4,112 |
 
 ## الجدول ج: تكاليف جانبية متغيرة (أدخل قيم بلدك)
 
@@ -68,7 +71,9 @@
 <select id="cc-ppl"><option value="1">1</option><option value="2">2 (عائلة)</option></select>
 <label>أفراد الأسرة المهاجرين إجمالاً (لجدول إثبات الأموال)</label>
 <select id="cc-fam"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4+</option></select>
-<label>تكاليف جانبية (لغة + ECA + طبي + ترجمة + سفر) — CAD</label><input id="cc-side" type="number" min="0" value="2500">
+<label>هل ينطبق عليك إعفاء إثبات الأموال؟ (CEC، أو عمل قانوني حالي في كندا + عرض عمل صالح، أو مسار لا يشترطه كلمّ شمل الزوج)</label>
+<select id="cc-exempt"><option value="no">لا / لا أعرف</option><option value="yes">نعم — موثق لديّ</option></select>
+<label>تكاليف جانبية (لغة + ECA + طبي + ترجمة + سفر) — تقديرك أنت، CAD</label><input id="cc-side" type="number" min="0" value="2500">
 <label>ميزانيتك المتاحة — CAD</label><input id="cc-budget" type="number" min="0" value="0">
 <br><button onclick="ccRun()">احسب</button>
 <div id="cc-out"></div>
@@ -77,7 +82,7 @@
 function ccRun(){
  const g=i=>document.getElementById(i).value;
  const p=g('cc-path'),kids=Math.min(3,+g('cc-kids')),ppl=g('cc-ppl'),fam=+g('cc-fam'),
- side=+g('cc-side'),budget=+g('cc-budget');
+ side=+g('cc-side'),budget=+g('cc-budget'),exempt=g('cc-exempt');
  let gov=0,items=[];
  if(p==='ee1'){gov=1590+kids*270;items.push('رئيسي شامل RPRF: 1,590');if(kids)items.push('أطفال: '+kids+'×270');}
  if(p==='ee2'){gov=3180+kids*270;items.push('رئيسي + شريك شامل RPRF: 3,180');if(kids)items.push('أطفال: '+kids+'×270');}
@@ -87,16 +92,19 @@ function ccRun(){
  const bio=ppl==='2'?170:85; items.push('بيومترية: '+bio); gov+=bio;
  const FUNDS={1:15263,2:19001,3:23360,4:28362}[fam];
  let fundsNeed=0;
- if(p==='ee1'||p==='ee2'){fundsNeed=FUNDS;items.push('إثبات أموال مجمّد (إلا بإعفاء عمل+عرض): '+FUNDS.toLocaleString());}
- if(p==='sp'){fundsNeed=23448;items.push('إثبات أموال دراسة (معيشة سنة): 23,448 + رسوم أول سنة');}
+ if(exempt==='no'&&(p==='ee1'||p==='ee2')){fundsNeed=FUNDS;items.push('إثبات أموال يُبرَز ولا يُدفع (جدول سارٍ محدّث 2025-07-07، أُعيد التحقق منه على الصفحة الرسمية 2026-11-22): '+FUNDS.toLocaleString());}
+ if(exempt==='no'&&p==='sp'){fundsNeed=23448;items.push('إثبات أموال دراسة يُبرَز ولا يُدفع (معيشة سنة، 2025-09 سارٍ): 23,448 + رسوم أول سنة (غير مشمولة هنا)');}
+ if(exempt==='yes'){items.push('إثبات أموال: معفى بحسب إدخالك — تحقق من شرط الإعفاء في صفحة البرنامج الرسمية');}
  const total=gov+side, grand=total+fundsNeed;
  const ok=budget>=grand;
- document.getElementById('cc-out').innerHTML='<table><tr><th>البند</th><th>CAD</th></tr>'+
+ document.getElementById('cc-out').innerHTML='<p><b>تقدير تخطيطي بتاريخ 2026-11-22</b> — ليس تأكيداً لكفاية مالية حالية ولا قراراً رسمياً؛ تحقق من صفحة رسوم IRCC يوم التقديم.</p>'+
+ '<table><tr><th>البند</th><th>CAD</th></tr>'+
  items.map(x=>'<tr><td>'+x+'</td><td></td></tr>').join('')+
- '<tr><td><b>رسوم حكومية + جانبية (تُدفع)</b></td><td><b>'+total.toLocaleString()+'</b></td></tr>'+
- '<tr><td><b>إثبات أموال مجمّد (لا يُدفع لكنه محجوز)</b></td><td><b>'+fundsNeed.toLocaleString()+'</b></td></tr>'+
- '<tr><td><b>الإجمالي المطلوب توفره</b></td><td><b>'+grand.toLocaleString()+'</b></td></tr></table>'+
- (budget?('<p class="'+(ok?'ok':'bad')+'">'+(ok?'ميزانيتك تغطي هذا المسار ✓':'ميزانيتك لا تغطي — الفجوة: '+(grand-budget).toLocaleString()+'$ — راجع مسارات يمولها صاحب العمل (08)')+'</p>'):'');
+ '<tr><td><b>أ) رسوم وتكاليف تُدفع فعلاً (حكومية بجدول 2026-11-22 + جانبية بتقديرك)</b></td><td><b>'+total.toLocaleString()+'</b></td></tr>'+
+ '<tr><td><b>ب) أموال إثبات تُبرَز ولا تُدفع (بقيت ملكك)</b></td><td><b>'+fundsNeed.toLocaleString()+'</b></td></tr>'+
+ '<tr><td><b>الإجمالي المطلوب توفره (أ+ب)</b></td><td><b>'+grand.toLocaleString()+'</b></td></tr></table>'+
+ '<p style="opacity:.85">غير مشمول في هذا التقدير: رسوم الدراسة للسنة الأولى (لمسار الدراسة)، تذاكر السفر والسكن الأولي، هامش طوارئ 10-15%، أي رسوم مقاطعة (PNP) أو CSQ (كيبيك). تركيبة الأسرة تغيّر الرسوم (الشريك +1,590$ وكل طفل +270$) ومبلغ الإثبات معاً.</p>'+
+ (budget?('<p class="'+(ok?'ok':'bad')+'">'+(ok?'وفق هذا التقدير المؤرخ: ميزانيتك تغطي البندين (أ+ب) ✓ — أعد التحقق من الأرقام الرسمية قبل الاعتماد':'وفق هذا التقدير المؤرخ: ميزانيتك لا تغطي — الفجوة: '+(grand-budget).toLocaleString()+'$ — راجع مسارات يمولها صاحب العمل (08)')+'</p>'):'');
 }
 </script>
 
@@ -116,7 +124,9 @@ function ccRun(){
 
 ## قراءة النتيجة (وفق خوارزمية 07)
 
-- إجمالي ≤ ميزانيتك ← المسار **قابل مالياً**.
+كل ما يلي ضمن **التقدير التخطيطي المؤرخ** أعلاه، لا تأكيد كفاية حالية:
+
+- إجمالي ≤ ميزانيتك ← المسار **قابل مالياً وفق هذا التقدير** (أعد التحقق من الأرقام الرسمية يوم التقديم).
 - فجوة صغيرة ← **يحتاج تمويلاً**: أعد الحساب بعد تدبير الفرق أو قلّل المرافقين في المرحلة الأولى.
 - فجوة كبيرة ← **غير قابل حالياً**: راجع مسارات يمولها صاحب العمل (LMIA/امتثال IMP عليه) وسيناريو الميزانية الصفرية في 08.
 
