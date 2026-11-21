@@ -1,0 +1,120 @@
+site_name: "دليل كندا الذكي — قاعدة معرفة الدخول والهجرة والعمل"
+site_description: "قاعدة معرفة عربية موثقة عن مسارات الدخول والهجرة والعمل في كندا، مبنية على المصادر الحكومية الرسمية أولاً."
+site_author: "Canada Immigration Intelligence"
+
+# المحتوى يعيش في جذر المستودع (الأدلة الـ13) وهذا المجلد يحوي إعدادات الموقع فقط
+docs_dir: ..
+site_dir: ../../kb-site-build
+exclude_docs: |
+  site/*
+  .git/*
+  .github/*
+  03-ALL-PROGRAMS/card-template.md
+
+theme:
+  name: material
+  language: ar
+  direction: rtl
+  font:
+    text: Noto Kufi Arabic
+    code: IBM Plex Mono
+  palette:
+    primary: red
+    accent: deep orange
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - search.highlight
+    - search.suggest
+    - content.action.view
+    - toc.follow
+
+plugins:
+  - search:
+      lang: ar
+      separator: '[\s\-\.,،؛:!؟()]+'
+
+markdown_extensions:
+  - tables
+  - admonition
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+
+extra_css:
+  - site/assets/extra.css
+
+nav:
+  - الرئيسية: README.md
+  - خريطة التغطية: 00-COVERAGE.md
+  - ابدأ هنا:
+    - 01-START-HERE/README.md
+    - الصورة الكبرى: 01-START-HERE/big-picture.md
+    - كيف تعمل المنظومة: 01-START-HERE/how-the-system-works.md
+    - المسرد: 01-START-HERE/glossary.md
+    - خريطة الجهات الحكومية: 01-START-HERE/government-map.md
+  - منظومة الهجرة:
+    - 02-IMMIGRATION-SYSTEM/README.md
+    - المهن عالية الأجر في Express Entry: 02-IMMIGRATION-SYSTEM/ee-high-wage-occupations.md
+    - التدابير الخاصة بالجنسيات: 02-IMMIGRATION-SYSTEM/special-measures.md
+  - كل البرامج:
+    - 03-ALL-PROGRAMS/README.md
+    - البرامج الفيدرالية:
+      - FSW — العمال المهرة الفيدرالي: 03-ALL-PROGRAMS/federal/fsw-express-entry.md
+      - CEC — فئة الخبرة الكندية: 03-ALL-PROGRAMS/federal/cec-canadian-experience-class.md
+      - FST — المهن الحرفية الفيدرالية: 03-ALL-PROGRAMS/federal/fst-federal-skilled-trades.md
+    - الدراسة:
+      - تصريح الدراسة: 03-ALL-PROGRAMS/study/study-permit.md
+      - PGWP — عمل ما بعد التخرج: 03-ALL-PROGRAMS/study/pgwp.md
+    - الزيارة:
+      - تأشيرة الزيارة TRV: 03-ALL-PROGRAMS/visit/visitor-visa-trv.md
+      - زائر الأعمال: 03-ALL-PROGRAMS/visit/business-visitor.md
+      - التأشيرة الفائقة للوالدين: 03-ALL-PROGRAMS/visit/super-visa.md
+    - لمّ شمل الأسرة:
+      - كفالة الزوج والأطفال: 03-ALL-PROGRAMS/family/spousal-sponsorship.md
+    - الحماية واللاجئون:
+      - اللجوء داخل كندا: 03-ALL-PROGRAMS/protection/asylum-in-canada.md
+      - إعادة التوطين GAR/PSR/BVOR: 03-ALL-PROGRAMS/protection/resettlement-gar-psr-bvor.md
+      - الاعتبارات الإنسانية H&C: 03-ALL-PROGRAMS/protection/hc-humanitarian.md
+    - برامج خاصة:
+      - الخبرة الدولية IEC: 03-ALL-PROGRAMS/special/iec-working-holiday.md
+    - برامج المقاطعات:
+      - كيبيك للأعمال: 03-ALL-PROGRAMS/provincial/quebec-business.md
+    - موقوفة ومغلقة:
+      - PGP الوالدين والأجداد: 03-ALL-PROGRAMS/closed-paused/pgp-parents-grandparents.md
+      - SUV الشركات الناشئة: 03-ALL-PROGRAMS/closed-paused/suv-startup-visa.md
+      - العاملون لحسابهم: 03-ALL-PROGRAMS/closed-paused/self-employed.md
+      - المستثمر الفيدرالي (تاريخياً): 03-ALL-PROGRAMS/closed-paused/federal-investor-entrepreneur.md
+  - العمل في كندا:
+    - 04-WORK-IN-CANADA/README.md
+    - العمل وأصحاب العمل (LMIA، IMP، Job Bank): 04-WORK-IN-CANADA/work-and-employers.md
+  - المقاطعات والمدن:
+    - 05-PROVINCES-AND-CITIES/README.md
+    - معايير تكاليف المعيشة: 05-PROVINCES-AND-CITIES/living-costs-benchmarks.md
+  - أدلة التقديم:
+    - 06-APPLICATION-GUIDES/README.md
+    - شبكة FSW (67 نقطة) كاملة: 06-APPLICATION-GUIDES/fsw-67-grid.md
+  - محرك القرار:
+    - 07-DECISION-ENGINE/README.md
+    - نموذج بيانات المتقدم: 07-DECISION-ENGINE/applicant-data-model.md
+    - خوارزمية الأهلية: 07-DECISION-ENGINE/eligibility-algorithm.md
+    - خرائط الانتقال بين المسارات: 07-DECISION-ENGINE/transition-maps.md
+  - التخطيط المالي:
+    - 08-FINANCIAL-PLANNING/README.md
+    - الرسوم وإثبات الأموال وأوقات المعالجة: 08-FINANCIAL-PLANNING/fees-funds-processing.md
+  - القانون والمخاطر:
+    - 09-LEGAL-AND-RISK/README.md
+    - كشف الاحتيال وحماية المتقدم: 09-LEGAL-AND-RISK/fraud-detection.md
+    - تحذيرات مركزية: 09-LEGAL-AND-RISK/central-warnings.md
+  - الأدوات العملية: 10-PRACTICAL-TOOLS/README.md
+  - خارطة الطريق الشخصية: 11-PERSONAL-ROADMAP/README.md
+  - المصادر والتحديثات:
+    - سجل المصادر: 12-SOURCES-AND-UPDATES/source-log.md
+    - سجل التحقق: 12-SOURCES-AND-UPDATES/verification-log.md
+    - سجل التغييرات: 12-SOURCES-AND-UPDATES/changelog.md
+  - حالات وأمثلة:
+    - 13-CASES-AND-EXAMPLES/README.md
+    - عينة Job Bank (22 نوفمبر 2026): 13-CASES-AND-EXAMPLES/jobbank-sample-2026-11-22/README.md
