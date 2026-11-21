@@ -24,12 +24,15 @@ hard_gates:
   - id: funds
     rule: إثبات أموال إلا بالإعفاء الثنائي (عمل قانوني حالي + عرض صالح)
     source: card field 12 / S29
+    if_fail: غير مؤهل ماليًا ما لم يتحقق الإعفاء
   - id: admissibility
     rule: قبول عام
     source: card field 14 / S29
+    if_fail: غير مؤهل — عدم قبول عام (طبي/أمني)
   - id: quebec_intent
     rule: نية سكن خارج كيبيك
     source: S29
+    if_fail: غير مؤهل عبر هذا البرنامج — نية سكن في كيبيك (تُوجَّه لمسارات كيبيك)
 no_requirement:
   - education (نقاط فقط) / S29
 notes:
