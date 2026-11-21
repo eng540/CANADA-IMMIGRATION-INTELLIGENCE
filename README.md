@@ -9,8 +9,8 @@
 
 - **الحالة**: نسخة أولى مكتملة بتاريخ 2026-11-22 — المرجع العام مبني كموقع قابل للتصفح والبحث ومنشور على GitHub Pages. تفصيل المراحل العشر في سجل التغطية.
 - **الموقع المنشور**: <https://eng540.github.io/CANADA-IMMIGRATION-INTELLIGENCE/>
-- **سجل التغطية والفجوات**: [00-COVERAGE.md](00-COVERAGE.md)
-- **سجل المصادر والتحقق**: [12-SOURCES-AND-UPDATES/](12-SOURCES-AND-UPDATES/)
+- [سجل التغطية والفجوات](00-COVERAGE.md)
+- [سجل المصادر والتحقق](12-SOURCES-AND-UPDATES/)
 
 ## كيف تتنقل
 
