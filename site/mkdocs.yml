@@ -116,6 +116,7 @@ nav:
     - 07-DECISION-ENGINE/README.md
     - نموذج بيانات المتقدم: 07-DECISION-ENGINE/applicant-data-model.md
     - خوارزمية الأهلية: 07-DECISION-ENGINE/eligibility-algorithm.md
+    - المحرك التفاعلي — قيّم مسارك: 07-DECISION-ENGINE/engine.md
     - خرائط الانتقال بين المسارات: 07-DECISION-ENGINE/transition-maps.md
     - حالات اختبار تتبعية: 07-DECISION-ENGINE/tests/test-cases.md
   - التخطيط المالي:
