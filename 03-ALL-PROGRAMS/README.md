@@ -30,7 +30,7 @@
 | PNP (11 جهة) | مفتوح بشروط/حصص | كيبيك ونونافوت خارج PNP؛ الترشيح المعزز بـEE = +600 نقطة عند القبول |
 | AIP | مفتوح بشروط/حصص | 4,000 قبول/سنة؛ عرض عمل من صاحب معتمد؛ يقبل من الخارج |
 | RCIP — البرنامج التجريبي للمجتمعات الريفية (Rural Community Immigration Pilot) | يُغلق في 2027-01-01 | من لديه توصية مجتمع مؤرخة 2026-12-31 أو قبله عليه تقديم طلب الإقامة الدائمة قبل انتهاء التوصية؛ حزمة الطلب تتحدد بتاريخ التوصية. المصدر: [صفحة تقديم الإقامة الدائمة](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/rural-immigration/permanent-residence.html) |
-| RCIP — البرنامج الدائم (Rural Community Immigration Program) | معلن ولم يبدأ (بدء القبول غير متحقق) | أعلنت الوزيرة تحول التجربة إلى برنامج دائم في 2026-11-09؛ المجتمعات الأربعة عشر «يُتوقع» مشاركتها. لم نتحقق من تاريخ بدء قبول الطلبات أو شروطه؛ راجع [بيان IRCC](https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/11/overview-of-the-rural-community-immigration-program.html) قبل الاعتماد |
+| RCIP — البرنامج الدائم (Rural Community Immigration Program) | معلن؛ فتح باب التقديم غير متحقق منه | أعلنت الوزيرة تحول التجربة إلى برنامج دائم في 2026-11-09؛ المجتمعات الأربعة عشر «يُتوقع» مشاركتها. لم نتحقق من تاريخ فتح باب التقديم أو شروطه؛ راجع [بيان IRCC](https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/11/overview-of-the-rural-community-immigration-program.html) قبل الاعتماد |
 | FCIP | مفتوح (تجريبي) | 6 مجتمعات فرنكوفونية |
 | كيبيك — عمال مهرة | مفتوح بشروط/حصص | اختيار مسبق عبر MIFI؛ التفاصيل في بطاقة [منظومة كيبيك](provincial/quebec-system.md) |
 
