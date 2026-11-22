@@ -20,7 +20,7 @@
 | Home Child Care Provider / Home Support Worker (2019) | مغلق | آخر يوم 2024-06-17 | صفحة Caregivers |
 | Live-in Caregiver / Caring for Children / High Medical Needs / Interim Pathway | مغلق | تواريخ إغلاق موثقة في البطاقات لاحقاً | صفحة Caregivers |
 | Agri-Food Pilot | مغلق | ضمن "برامج مغلقة للطلبات الجديدة" في بيان 2026-11 | بيان 2026-11 |
-| Economic Mobility Pathways Pilot | يعمل ضمن حصص | ضمن بند التجريبية في خطة المستويات | خطة 2026–2028 |
+| Economic Mobility Pathways Pilot (EMPP) | مغلق | صفحة IRCC الرسمية تعلن حالته «Closed to new applications»؛ لا يُقدَّم طلب جديد عبره (صُحّح في 2026-11-22 بعد أن كان مدرجاً خطأً ضمن البرامج العاملة) | [صفحة EMPP](https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees/economic-mobility-pathways-pilot.html) |
 | مسار الأطباء (فئة EE للأطباء بخبرة كندية) | مفتوح بشروط/حصص | أعلن ديسمبر 2025؛ أول جولة مطلع 2026 | بيان 2026-02-18 |
 
 ## ب. برامج المقاطعات والمجتمعات
@@ -29,7 +29,8 @@
 |---|---|---|
 | PNP (11 جهة) | مفتوح بشروط/حصص | كيبيك ونونافوت خارج PNP؛ الترشيح المعزز بـEE = +600 نقطة عند القبول |
 | AIP | مفتوح بشروط/حصص | 4,000 قبول/سنة؛ عرض عمل من صاحب معتمد؛ يقبل من الخارج |
-| RCIP | مفتوح — تحول لدائم 2026-11-09 | 14 مجتمعاً؛ نموذج صاحب عمل معتمد مجتمعياً |
+| RCIP — البرنامج التجريبي للمجتمعات الريفية (Rural Community Immigration Pilot) | يُغلق في 2027-01-01 | من لديه توصية مجتمع مؤرخة 2026-12-31 أو قبله عليه تقديم طلب الإقامة الدائمة قبل انتهاء التوصية؛ حزمة الطلب تتحدد بتاريخ التوصية. المصدر: [صفحة تقديم الإقامة الدائمة](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/rural-immigration/permanent-residence.html) |
+| RCIP — البرنامج الدائم (Rural Community Immigration Program) | معلن ولم يبدأ (بدء القبول غير متحقق) | أعلنت الوزيرة تحول التجربة إلى برنامج دائم في 2026-11-09؛ المجتمعات الأربعة عشر «يُتوقع» مشاركتها. لم نتحقق من تاريخ بدء قبول الطلبات أو شروطه؛ راجع [بيان IRCC](https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/11/overview-of-the-rural-community-immigration-program.html) قبل الاعتماد |
 | FCIP | مفتوح (تجريبي) | 6 مجتمعات فرنكوفونية |
 | كيبيك — عمال مهرة | مفتوح بشروط/حصص | اختيار مسبق عبر MIFI؛ التفاصيل في بطاقة [منظومة كيبيك](provincial/quebec-system.md) |
 
