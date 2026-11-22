@@ -195,7 +195,7 @@ function deRun(){
    if(offer==='none')f.push('يتطلب عرض عمل من صاحب عمل مؤهل في '+G.offer+(G.offerNote?' ('+G.offerNote+')':''));
    else if(poffer&&poffer!=='unknown'){
     if(poffer===G.oprov)u.push('أكّد استيفاء صاحب العمل لشروط المسار في '+G.offer+(G.offerNote?' ('+G.offerNote+')':''));
-    else f.push('عرضك الحالي في مقاطعة أخرى — هذا المسار يتطلب عرضاً في '+G.offer+(G.offerNote?' ('+G.offerNote+')':''));
+    else f.push('عرضك الحالي (بحسب مدخلاتك الآن) في مقاطعة أخرى — هذا المسار يتطلب عرضاً في '+G.offer+(G.offerNote?' ('+G.offerNote+')':'')+' — حكم على ملفك الحالي لا استحالة دائمة: عرض مؤهل لاحق في '+G.offer+' يعيدك للمقارنة');
    }
    else u.push('أكّد أن عرضك من صاحب عمل مؤهل في '+G.offer+' ويستوفي شروط المسار'+(G.offerNote?' ('+G.offerNote+')':''));
   }
@@ -203,7 +203,7 @@ function deRun(){
    if(cexp<6)f.push('لا خبرة كندية مصرحاً عنها — يتطلب عملاً/خبرة داخل '+G.inprov+(G.inprovNote?' ('+G.inprovNote+')':''));
    else if(pexp&&pexp!=='unknown'){
     if(pexp===G.oprov)u.push('أكّد استيفاء تفاصيل المدة وصاحب العمل في '+G.inprov+(G.inprovNote?' ('+G.inprovNote+')':''));
-    else f.push('خبرتك الكندية في مقاطعة أخرى — هذا المسار يتطلب '+G.inprov+(G.inprovNote?' ('+G.inprovNote+')':''));
+    else f.push('خبرتك الكندية الحالية (بحسب مدخلاتك الآن) في مقاطعة أخرى — هذا المسار يتطلب '+G.inprov+(G.inprovNote?' ('+G.inprovNote+')':'')+' — حكم على ملفك الحالي لا استحالة دائمة: خبرة مؤهلة لاحقة في '+G.inprov+' تعيدك للمقارنة');
    }
    else u.push('هل خبرتك الكندية في '+G.inprov+' تحديداً؟'+(G.inprovNote?' '+G.inprovNote:''));
   }
@@ -239,6 +239,7 @@ function deRun(){
    {prov:'نيو برونزويك', n:'تجريبي خريجي كليات المهن الخاصة (Private Career College Graduate…', st:'مُمدد بقدرة محدودة حتى نهاية 2027، فقط للطلاب المسجلين أصلاً في برامج…', note:'لا: لخريجي كليات مهنية خاصة مشاركة في نيو برونزويك في برامج تعليم وتنمية اجتماعية وصحة غير مؤهلة لـPGWP؛ حسب…', card:'new-brunswick-npnp', off:'https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program.html'},
    {prov:'أونتاريو', n:'مسار أولوية القوى العاملة: فرع الأطباء المستقلين (Self-Employed…', st:'مفتوح (التواصل الأولي عبر نموذج ويب OINP وليس عبر صاحب عمل)', note:'ممكن نظرياً مع استيفاء شرطي الطبيب؛ ليست معياراً؛ ممارسة الطب في أونتاريو تكسب نقاط EOI', card:'ontario-oinp', off:'https://www.ontario.ca/page/ontario-immigrant-nominee-program-oinp'}
  ];
+
 
 
 
