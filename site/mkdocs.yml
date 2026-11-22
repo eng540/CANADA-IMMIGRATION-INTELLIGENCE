@@ -1,6 +1,7 @@
 site_name: "دليل كندا الذكي — قاعدة معرفة الدخول والهجرة والعمل"
 site_description: "قاعدة معرفة عربية موثقة عن مسارات الدخول والهجرة والعمل في كندا، مبنية على المصادر الحكومية الرسمية أولاً."
 site_author: "Canada Immigration Intelligence"
+site_url: "https://eng540.github.io/CANADA-IMMIGRATION-INTELLIGENCE/"
 
 # المحتوى يعيش في جذر المستودع (الأدلة الـ13) وهذا المجلد يحوي إعدادات الموقع فقط
 docs_dir: ..
