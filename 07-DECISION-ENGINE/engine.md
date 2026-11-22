@@ -89,7 +89,7 @@ function deRun(){
  if(clb===0)u.push('نتيجة اختبار لغة');else if(clb<4)f.push('الحد الأدنى CLB 5 تحدث/استماع وCLB 4 قراءة/كتابة');else if(clb<5)u.push('تحقق أن التحدث/الاستماع ≥ CLB 5');
  if(!fswExempt&&!hasFunds)f.push('إثبات أموال ('+FUNDS.toLocaleString()+'$) ما لم ينطبق الإعفاء الثنائي');
  if(qc==='yes')f.push('نية سكن في كيبيك');
- R.push({n:'FST — المهن الحرفية الفيدرالية (Express Entry)',f,u,note:'الأهلية بمجموعات NOC محددة (72 عدا 726، 73، 82، 83، 92، 93 عدا 932، 6320، 62200) وليس بفئة TEER وحدها — تحقق 2026-11-22 من الصفحة الرسمية.',cost:PRFEE,next:'مطابقة NOC ثم بطاقة <a href="../../03-ALL-PROGRAMS/federal/fst-federal-skilled-trades/">FST</a>.'});
+ R.push({n:'FST — المهن الحرفية الفيدرالية (Express Entry)',f,u,fund:(fstnoc==='unknown'&&trade!=='no'),note:'الأهلية بمجموعات NOC محددة (72 عدا 726، 73، 82، 83، 92، 93 عدا 932، 6320، 62200) وليس بفئة TEER وحدها — تحقق 2026-11-22 من الصفحة الرسمية.',cost:PRFEE,next:'مطابقة NOC ثم بطاقة <a href="../../03-ALL-PROGRAMS/federal/fst-federal-skilled-trades/">FST</a>.'});
  // Work permit
  f=[];u=[];
  if(offer==='none')f.push('لا عرض عمل — هو بوابة هذا المسار كله');
@@ -111,7 +111,7 @@ function deRun(){
  else if(fexp>=1&&clb>=4)u.push('تحقق يدوي: تيارات مرتبطة بـExpress Entry أو بمهن مطلوبة (SINP/OINP/AAIP...)');
  else u.push('تحقق يدوي: معظم التيارات تتطلب عرض عمل أو ملف Express Entry أو صلة بالمقاطعة');
  if(qc==='yes')u.push('كيبيك لها نظامها الخاص — انظر بطاقة كيبيك أدناه');
- R.push({n:'PNP — برامج ترشيح المقاطعات',f,u,note:pnpNote+' لا يُستبعد ولا يُقبل آلياً هنا.',cost:'رسوم المقاطعة تختلف (بعضها مجاني/بعضها مئات الدولارات) + رسوم PR الفيدرالية — '+CALC,next:'افتح <a href="../../03-ALL-PROGRAMS/provincial/">بطاقات المقاطعات الـ13</a> وقارن تياراً واحداً بملفك.'});
+ R.push({n:'PNP — برامج ترشيح المقاطعات',f,u,fund:true,note:pnpNote+' لا يُستبعد ولا يُقبل آلياً هنا.',cost:'رسوم المقاطعة تختلف (بعضها مجاني/بعضها مئات الدولارات) + رسوم PR الفيدرالية — '+CALC,next:'افتح <a href="../../03-ALL-PROGRAMS/provincial/">بطاقات المقاطعات الـ13</a> وقارن تياراً واحداً بملفك.'});
  // AIP / RCIP
  f=[];u=[];
  if(offer==='none')f.push('لا عرض عمل — بوابة البرامجين');
@@ -120,7 +120,7 @@ function deRun(){
  // Quebec
  f=[];u=[];
  if(qc==='no'){R.push({n:'كيبيك (Arrima/PEQ/أعمال)',info:true,f,u,note:'خارج نطاق نيتك الحالية (اخترت «لا كيبيك»). لكيبيك نظام اختيار خاص عبر MIFI يتطلب عموماً الفرنسية.',cost:'',next:'إن غيّرت نيتك: <a href="../../03-ALL-PROGRAMS/provincial/quebec-system/">بطاقة كيبيك</a>.'});}
- else{u.push('تقييم يدوي عبر نظام كيبيك (MIFI/Arrima) — الفرنسية شرط محوري');R.push({n:'كيبيك (Arrima/PEQ/أعمال)',f,u,note:'اختيار مزدوج: CSQ من MIFI ثم PR فيدرالي.',cost:'رسوم كيبيك + فيدرالية — '+CALC,next:'<a href="../../03-ALL-PROGRAMS/provincial/quebec-system/">بطاقة كيبيك (النظام المستقل)</a>.'});}
+ else{u.push('تقييم يدوي عبر نظام كيبيك (MIFI/Arrima) — الفرنسية شرط محوري');R.push({n:'كيبيك (Arrima/PEQ/أعمال)',f,u,fund:true,note:'اختيار مزدوج: CSQ من MIFI ثم PR فيدرالي.',cost:'رسوم كيبيك + فيدرالية — '+CALC,next:'<a href="../../03-ALL-PROGRAMS/provincial/quebec-system/">بطاقة كيبيك (النظام المستقل)</a>.'});}
  // Family sponsorship
  f=[];u=[];
  if(rel==='no')f.push('لا قريب مؤهل مصرحاً عنه — الكفالة تتطلب زوجاً/شريكاً أو والداً مواطناً أو مقيماً دائماً');
@@ -129,7 +129,7 @@ function deRun(){
  // Business (static)
  R.push({n:'الأعمال والاستثمار',info:true,f:[],u:[],note:'SUV وبرنامج العاملين لحسابهم <b>متوقفان</b> (تحقق 2026-11-22)؛ برنامجا المستثمر/رائد الأعمال الفيدراليان مغلقان منذ 2014؛ لا يوجد مسار «استثمار مقابل إقامة» فيدرالي. المتاح: كيبيك للأعمال بشروط MIFI.',cost:'',next:'<a href="../../03-ALL-PROGRAMS/provincial/quebec-business/">بطاقة كيبيك للأعمال</a> · <a href="../../03-ALL-PROGRAMS/closed-paused/suv-startup-visa/">بطاقة SUV</a>.'});
  // Protection (static)
- R.push({n:'مسارات الحماية (لجوء/إعادة توطين/H&C)',info:true,f:[],u:[],note:'ليست مسارات هجرة اختيارية ولا تُقيَّم ذاتياً: اللجوء يتطلب وجوداً داخل كندا وأسباب حماية فعلية (قواعد 2026 مشددة)، وإعادة التوطين لا تُقبل إلا بإحالة UNHCR أو كفيل مؤهل.',cost:'',next:'<a href="../../03-ALL-PROGRAMS/protection/asylum-in-canada/">بطاقات الحماية</a>.'});
+ R.push({n:'مسارات الحماية (لجوء/إعادة توطين/H&C)',info:true,f:[],u:[],note:'ليست مسارات هجرة اختيارية ولا تُقيَّم ذاتياً. اللجوء داخل كندا مسار منفصل تماماً بقواعد 2026 المشددة (أهلية قانونية للحماية الفعلية). إعادة التوطين من الخارج بلا تقديم ذاتي وتختلف آلياتها: GAR بإحالة من UNHCR أو منظمة إحالة معينة أخرى؛ PSR عبر كفيل خاص مؤهل قد يحدد اللاجئ مباشرة (SAH مفتوح حالياً؛ مجموعات الخمسة والكفلاء المجتمعيون موقوفان — تحقق 2026-11-22)؛ BVOR بمطابقة كفيل مع لاجئ أحالته منظمة إحالة.',cost:'',next:'<a href="../../03-ALL-PROGRAMS/protection/resettlement-gar-psr-bvor/">بطاقات إعادة التوطين الثلاث</a> · <a href="../../03-ALL-PROGRAMS/protection/asylum-in-canada/">بطاقة اللجوء</a>.'});
  // rank
  const order=r=>r.info?3:r.f.length===0&&r.u.length===0?0:r.f.length===0?1:2;
  const ranked=R.filter(r=>!r.info).sort((a,b)=>order(a)-order(b));
@@ -145,17 +145,21 @@ function deRun(){
   if(r.next)h+='<div class="cost">الخطوة التالية: '+r.next+'</div>';
   h+='</div>';
  }
- // top three + backup
- const inv=ranked.filter(r=>order(r)<=1);
- const top3=inv.slice(0,3);
- const backup=inv.length>3?inv[3]:(ranked.find(r=>order(r)===2&&!top3.includes(r))||null);
+ // top three + backup: only plausible routes supported by the profile; fundamental manual-verification routes and excluded routes are shown separately, never used to fill slots
+ const plausible=ranked.filter(r=>order(r)<=1&&!r.fund).sort((a,b)=>order(a)-order(b)||a.u.length-b.u.length);
+ const manualRoutes=ranked.filter(r=>order(r)<=1&&r.fund);
+ const excluded=ranked.filter(r=>order(r)===2);
+ const top3=plausible.slice(0,3);
+ const backup=plausible.length>3?plausible[3]:null;
  h+='<div class="card"><div class="v">خلاصة المقارنة — أقرب المسارات للتحقيق (وليست تأكيد أهلية):</div>';
  if(top3.length){
   h+='<ol>'+top3.map(r=>'<li><b>'+r.n+'</b>'+(r.u.length?' — بشرط استكمال: '+r.u.join('؛ '):' — البوابات الموثقة مستوفاة مبدئياً؛ القبول النهائي تنافسي/تقديري لدى IRCC')+'</li>').join('')+'</ol>';
-  if(backup)h+='<div>خيار احتياطي: <b>'+backup.n+'</b>'+(backup.f.length?' — حالياً مستبعد: '+backup.f[0]:'')+'</div>';
+  h+='<div>'+(backup?'خيار احتياطي مدعوم: <b>'+backup.n+'</b>'+(backup.u.length?' — بشرط: '+backup.u.join('؛ '):''):'لا خيار احتياطي مدعوم بالمعلومات الحالية — لا تُملأ هذه الخانة بمسار مستبعد أو ناقص التحقق.')+'</div>';
  }else{
-  h+='<div>لا مسار قريب حالياً — عالج أسباب الاستبعاد بدءاً بالبوابة الأسهل (غالباً اللغة أو عرض العمل)، ثم أعد المقارنة.</div>';
+  h+='<div>المعلومات الحالية لا تدعم ترشيح أي مسار — استكمل التحققات اليدوية أدناه أو عالج أسباب الاستبعاد ثم أعد المقارنة.</div>';
  }
+ if(manualRoutes.length)h+='<div style="margin-top:6px"><b>مشروطة بتحقق يدوي أساسي (لا تُرتَّب قبل إنجازه):</b><ul>'+manualRoutes.map(r=>'<li>'+r.n+' — '+r.u[0]+'</li>').join('')+'</ul></div>';
+ if(excluded.length)h+='<div><b>مستبعدة حالياً، مع شرط التحسين:</b><ul>'+excluded.map(r=>'<li>'+r.n+' — '+r.f[0]+'</li>').join('')+'</ul></div>';
  h+='<br><span style="opacity:.8">مقارنة آلية أولية بقواعد بتاريخ تحقق 2026-11-22؛ القرار النهائي لضباط IRCC ولصفحات البرامج الرسمية. العائلات الإقليمية والخاصة أُدرجت بمخرجات «يحتاج تحقق يدوي» لأن أدلتها لا تدعم حسمًا آلياً. لا تُحتسب هنا نسب نجاح — لا توجد بيانات رسمية لذلك.</span></div>';
  document.getElementById('de-out').innerHTML=h;
  document.getElementById('de-out').scrollIntoView({behavior:'smooth'});
