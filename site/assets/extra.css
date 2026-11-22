@@ -17,3 +17,11 @@ blockquote {
   border-right: 0.2rem solid var(--md-accent-fg-color);
   border-left: none;
 }
+
+/* كتل الشيفرة على الشاشات الضيقة: التفاف بدل القص/التمرير المخفي */
+@media screen and (max-width: 44.9375em) {
+  .md-typeset pre > code {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+}
