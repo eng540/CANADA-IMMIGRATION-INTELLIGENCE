@@ -46,7 +46,7 @@ markdown_extensions:
   - md_in_html
 
 extra_css:
-  - site/assets/extra.css
+  - assets/extra.css
 
 nav:
   - الرئيسية: README.md
