@@ -185,7 +185,8 @@ function deRun(){
    }
   }
   if(G.sec){
-   if(ocsec==='unknown')u.push('هذا المسار مخصص لـ'+G.secLabel+' — حدد قطاع مهنتك');
+   if(G.sec==='list8')u.push('هل مهنتك ضمن قائمة المهن الثمانية المدرجة؟ ('+G.secLabel+') — قائمة مهن تُتحقق يدوياً من الصفحة الرسمية؛ لا يستبعدها المحرك أياً كان القطاع المختار');
+   else if(ocsec==='unknown')u.push('هذا المسار مخصص لـ'+G.secLabel+' — حدد قطاع مهنتك');
    else if(ocsec!==G.sec){f.push('مهنتك خارج نطاق هذا المسار ('+G.secLabel+')');}
   }
   if(G.fr){if(fr===0)u.push('مستوى الفرنسية مطلوب (الحد الموثق: '+(G.frNote||('NCLC '+G.fr))+')');else if(fr<G.fr)f.push('الفرنسية دون الحد الموثق ('+(G.frNote||('NCLC '+G.fr))+')');}
@@ -239,6 +240,7 @@ function deRun(){
    {prov:'نيو برونزويك', n:'تجريبي خريجي كليات المهن الخاصة (Private Career College Graduate…', st:'مُمدد بقدرة محدودة حتى نهاية 2027، فقط للطلاب المسجلين أصلاً في برامج…', note:'لا: لخريجي كليات مهنية خاصة مشاركة في نيو برونزويك في برامج تعليم وتنمية اجتماعية وصحة غير مؤهلة لـPGWP؛ حسب…', card:'new-brunswick-npnp', off:'https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program.html'},
    {prov:'أونتاريو', n:'مسار أولوية القوى العاملة: فرع الأطباء المستقلين (Self-Employed…', st:'مفتوح (التواصل الأولي عبر نموذج ويب OINP وليس عبر صاحب عمل)', note:'ممكن نظرياً مع استيفاء شرطي الطبيب؛ ليست معياراً؛ ممارسة الطب في أونتاريو تكسب نقاط EOI', card:'ontario-oinp', off:'https://www.ontario.ca/page/ontario-immigrant-nominee-program-oinp'}
  ];
+
 
 
 
