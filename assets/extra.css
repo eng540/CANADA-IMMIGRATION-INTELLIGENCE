@@ -1,0 +1,27 @@
+/* تحسينات عربية RTL لموقع الدليل */
+:root {
+  --md-text-font: "Noto Kufi Arabic", "Segoe UI", Tahoma, sans-serif;
+}
+body {
+  letter-spacing: 0;
+  line-height: 1.9;
+}
+.md-typeset table:not([class]) {
+  font-size: 0.72rem;
+}
+.md-typeset h1, .md-typeset h2, .md-typeset h3 {
+  font-weight: 700;
+  line-height: 1.5;
+}
+blockquote {
+  border-right: 0.2rem solid var(--md-accent-fg-color);
+  border-left: none;
+}
+
+/* كتل الشيفرة على الشاشات الضيقة: التفاف بدل القص/التمرير المخفي */
+@media screen and (max-width: 44.9375em) {
+  .md-typeset pre > code {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+}
