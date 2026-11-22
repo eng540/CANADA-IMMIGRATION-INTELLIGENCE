@@ -196,7 +196,7 @@ function deRun(){
    if(offer==='none')f.push('يتطلب عرض عمل من صاحب عمل مؤهل في '+G.offer+(G.offerNote?' ('+G.offerNote+')':''));
    else if((PROVOF[G.offer]||null)&&poffer&&poffer!=='unknown'){
     if(poffer===PROVOF[G.offer])u.push('أكّد استيفاء صاحب العمل لشروط المسار في '+G.offer+(G.offerNote?' ('+G.offerNote+')':''));
-    else f.push('عرضك الحالي في مقاطعة أخرى — هذا المسار يتطلب عرضاً في '+G.offer+(G.offerNote?' ('+G.offerNote+')':''));
+    else f.push('عرضك الحالي (بحسب مدخلاتك الآن) في مقاطعة أخرى — هذا المسار يتطلب عرضاً في '+G.offer+(G.offerNote?' ('+G.offerNote+')':'')+' — حكم على ملفك الحالي لا استحالة دائمة: عرض مؤهل لاحق في '+G.offer+' يعيدك للمقارنة');
    }
    else u.push('أكّد أن عرضك من صاحب عمل مؤهل في '+G.offer+' ويستوفي شروط المسار'+(G.offerNote?' ('+G.offerNote+')':''));
   }
@@ -204,7 +204,7 @@ function deRun(){
    if(cexp<6)f.push('لا خبرة كندية مصرحاً عنها — يتطلب عملاً/خبرة داخل '+G.inprov+(G.inprovNote?' ('+G.inprovNote+')':''));
    else if((PROVOF[G.inprov]||null)&&pexp&&pexp!=='unknown'){
     if(pexp===PROVOF[G.inprov])u.push('أكّد استيفاء تفاصيل المدة وصاحب العمل في '+G.inprov+(G.inprovNote?' ('+G.inprovNote+')':''));
-    else f.push('خبرتك الكندية في مقاطعة أخرى — هذا المسار يتطلب '+G.inprov+(G.inprovNote?' ('+G.inprovNote+')':''));
+    else f.push('خبرتك الكندية الحالية (بحسب مدخلاتك الآن) في مقاطعة أخرى — هذا المسار يتطلب '+G.inprov+(G.inprovNote?' ('+G.inprovNote+')':'')+' — حكم على ملفك الحالي لا استحالة دائمة: خبرة مؤهلة لاحقة في '+G.inprov+' تعيدك للمقارنة');
    }
    else u.push('هل خبرتك الكندية في '+G.inprov+' تحديداً؟'+(G.inprovNote?' '+G.inprovNote:''));
   }
