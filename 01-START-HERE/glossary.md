@@ -27,7 +27,7 @@
 | FST | Federal Skilled Trades Program | برنامج الحِرَف الماهرة (ضمن EE) |
 | PNP | Provincial Nominee Program | برامج ترشيح المقاطعات |
 | AIP | Atlantic Immigration Program | برنامج هجرة الأطلسي (4 مقاطعات) |
-| RCIP | Rural Community Immigration Program | برنامج الهجرة للمجتمعات الريفية (أصبح دائماً نوفمبر 2026) |
+| RCIP | Rural Community Immigration Pilot / Program | التجريبي للمجتمعات الريفية (يُغلق 2027-01-01) ويحل محله برنامج دائم أُعلن في نوفمبر 2026 |
 | FCIP | Francophone Community Immigration Pilot | تجريبي المجتمعات الفرنكوفونية |
 | CSQ | Certificat de sélection du Québec | شهادة اختيار كيبيك؛ إلزامية قبل الطلب الفيدرالي لمن وجهته كيبيك |
 | DLI | Designated Learning Institution | مؤسسة تعليمية معتمدة لاستقبال الطلاب الدوليين |
